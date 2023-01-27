@@ -30,7 +30,7 @@ import {
   Telegram,
   Mail,
   CCTLD,
-  DC
+  DC,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
