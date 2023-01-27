@@ -5,7 +5,5 @@ out
 
 # Ignore Data jsons
 data/blog.json
-data/design.json
 data/keyboards.json
-data/music.json
 data/useful.json
