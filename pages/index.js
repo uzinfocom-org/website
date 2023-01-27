@@ -26,7 +26,7 @@ const Index = () => {
           tugmalarini bosing. Agar ishlamasa tepadagi ⌘ tugmachani bosing...
         </p>
 
-        <Spotify />
+        {/*<Spotify />*/}
       </article>
     </Page>
   )
