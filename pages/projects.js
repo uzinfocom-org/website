@@ -3,20 +3,13 @@ import Entry from '@components/entry'
 
 const Projects = () => {
   return (
-    <Page title="Projects" description="Collection of past and present work.">
+    <Page title="Loyihalar" description="Qilinga barcha loyihalar ro'yxati.">
       <article>
         <Entry
           title="Uzinfocom Open Source"
           description="Uzinfocom's Open Source Organization"
           image="https://raw.githubusercontent.com/uzinfocom-org/.github/main/images/new-banner.png"
           href="https://oss.uzinfocom.uz/"
-        />
-
-        <Entry
-          title="Mad Maids"
-          description="An organization that helps young developers"
-          image="https://raw.githubusercontent.com/mad-maids/.github/main/profile/banners.png"
-          href="https://maid.uz"
         />
 
         <Entry

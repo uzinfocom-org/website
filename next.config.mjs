@@ -4,16 +4,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/skyline',
-        destination: '/api/skyline',
-        permanent: true,
-      },
-      {
-        source: '/cxsmxs',
-        destination: 'https://cxsmxs.space/',
-        permanent: true,
-      },
-      {
         source: '/discord',
         destination: 'https://discord.gg/JkXFQpScFj',
         permanent: true,

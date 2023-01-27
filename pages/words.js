@@ -5,7 +5,7 @@ const Words = ({ html }) => {
   return (
     <Page
       title="Words"
-      description="Collection of words I read but didn't understand."
+      description="Biz o'ylab topgan so'zlar."
     >
       <article dangerouslySetInnerHTML={{ __html: html }} />
     </Page>

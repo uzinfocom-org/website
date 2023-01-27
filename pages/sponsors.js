@@ -8,9 +8,9 @@ import { gql } from '@apollo/client'
 const Reading = ({ sponsors }) => {
   console.log(sponsors)
   return (
-    <Page title="Sponsors" description="People who support my work and effort!">
+    <Page title="Sponsors" description="Biz qo'llab quvvatlaydigan dasturchilar!">
       <article>
-        <h1 align="center">People who support my work!</h1>
+        <h1 align="center">Biz qo'llab quvvatlaydigan dasturchilar!</h1>
 
         {sponsors.map((entry) => {
           return (

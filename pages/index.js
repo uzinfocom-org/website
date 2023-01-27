@@ -21,17 +21,6 @@ const Index = () => {
           kuzatib borishingiz mumkin.
         </p>
 
-        <p>
-          Working at{' '}
-          <Link underline href="https://uzinfocom.uz/uz/" external>
-            Uzinfocom
-          </Link>{' '}
-          to make Uzbekistan more survivable. Mostly, I maintain{' '}
-          <Link underline href="https://github.com/uzinfocom-org" external>
-            Uzinfocom Open Source Organization.
-          </Link>
-        </p>
-
         <p align="center">
           Sehr yuz berishi uchun <code>⌘ + K</code> yoki <code>Alt + K</code> tugmalarini bosing. Agar
           ishlamasa tepadagi ⌘ tugmachani bosing...

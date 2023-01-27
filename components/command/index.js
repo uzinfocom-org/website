@@ -82,19 +82,16 @@ const CommandMenu = memo(() => {
       'g h': () => router.push('/'),
       'g c': () => router.push('/contact'),
       // Collections
-      'g r': () => router.push('/reading'),
+      'g r': () => router.push('/useful'),
       'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
-      'g m': () => router.push('/minecraft'),
       'g p': () => router.push('/projects'),
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
-      'g s': () => router.push('/stack'),
-      'g y': () => router.push('/minecraft'),
       'g z': () => router.push('/sponsors'),
       // Social
-      'g /': () => () => window.open('https://t.me/yurionblog', '_blank'),
+      'g /': () => () => window.open('https://t.me/uzinfocom_oss', '_blank'),
     }
   }, [router, setPages])
 
@@ -151,7 +148,7 @@ const CommandMenu = memo(() => {
       >
         <DialogContent
           className={styles['dialog-content']}
-          aria-label="Site Navigation"
+          aria-label="Sayt boshqarmasi"
         >
           <Command
             {...commandProps}
@@ -164,10 +161,10 @@ const CommandMenu = memo(() => {
               <CommandInput
                 placeholder={
                   Items === ThemeItems
-                    ? 'Select a theme...'
+                    ? 'Mavzu tanlang...'
                     : Items === BlogItems
-                    ? 'Search for posts...'
-                    : 'Type a command or search...'
+                    ? 'Postni qidiring...'
+                    : 'Buyruq kiriting yoki qidiring...'
                 }
               />
             </div>
@@ -196,6 +193,20 @@ const CommandMenu = memo(() => {
 CommandMenu.displayName = 'CommandMenu'
 export default CommandMenu
 
+const themeTranslator = (theme) => {
+  console.log(theme)
+  switch (theme) {
+    case 'light':
+      return 'yorqin'
+    case 'dark':
+      return 'qorong\'i'
+    case 'system':
+      return 'tizim'
+    default:
+      return theme
+  }
+}
+
 const ThemeItems = () => {
   const { theme: activeTheme, themes, setTheme } = useTheme()
   const { setOpen } = useCommandData()
@@ -211,7 +222,7 @@ const ThemeItems = () => {
           setOpen(false)
         }}
       >
-        {theme}
+        {themeTranslator(theme)}
       </Item>
     )
   })
@@ -253,9 +264,9 @@ const DefaultItems = () => {
 
   return (
     <>
-      <Group title="Look & Feel">
+      <Group title="Ko'rinish">
         <Item
-          value="Themes"
+          value="Mavzular"
           icon={<Sparkles />}
           keybind="t"
           closeOnCallback={false}
@@ -264,7 +275,7 @@ const DefaultItems = () => {
       <Group title="Blog">
         <Item value="Blog" icon={<Pencil />} keybind="g b" />
         <Item
-          value="Search blog..."
+          value="Postni qidirish..."
           icon={<Search />}
           closeOnCallback={false}
           callback={() => setPages([...pages, BlogItems])}
@@ -277,17 +288,14 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Collection">
-        <Item value="Reading" icon={<Book />} keybind="g r" />
-        <Item value="Design" icon={<Design />} keybind="g d" />
-        <Item value="Keyboards" icon={<M6 />} keybind="g k" />
-        <Item value="Music" icon={<Music />} keybind="g m" />
-        <Item value="Projects" icon={<Document />} keybind="g p" />
-        <Item value="Quotes" icon={<Quote />} keybind="g q" />
-        <Item value="Words" icon={<Words />} keybind="g w" />
-        <Item value="Ideas" icon={<LightBulb />} keybind="g i" />
-        <Item value="Stacks" icon={<Pin />} keybind="g s" />
-        <Item value="Minecraft" icon={<Play />} keybind="g y" />
-        <Item value="Sponsors" icon={<Mail />} keybind="g z" />
+        <Item value="Foydali" icon={<Book />} keybind="g r" />
+        <Item value="Dizayn" icon={<Design />} keybind="g d" />
+        <Item value="Klavuaturalar" icon={<M6 />} keybind="g k" />
+        <Item value="Loyihalar" icon={<Document />} keybind="g p" />
+        <Item value="Maqollar" icon={<Quote />} keybind="g q" />
+        <Item value="So'zlar" icon={<Words />} keybind="g w" />
+        <Item value="Rejalar" icon={<LightBulb />} keybind="g i" />
+        <Item value="Yordam" icon={<Mail />} keybind="g z" />
       </Group>
 
       <Group title="Navigation">
@@ -300,22 +308,22 @@ const DefaultItems = () => {
           value="GitHub"
           icon={<GitHub />}
           callback={() =>
-            window.open('https://github.com/katsuki-yuri', '_blank')
+            window.open('https://github.com/uzinfocom-org', '_blank')
           }
         />
         <Item
           value="Telegram"
           icon={<Telegram />}
           keybind="g /"
-          callback={() => window.open('https://t.me/yurionblog', '_blank')}
+          callback={() => window.open('https://t.me/uzinfocom_oss', '_blank')}
         />
       </Group>
 
       <Group title="Platforms">
         <Item
-          value="CXSMXS"
+          value="Datacenter"
           icon={<Gitlab />}
-          callback={() => window.open('https://cxsmxs.space', '_blank')}
+          callback={() => window.open('https://dc.uz', '_blank')}
         />
       </Group>
     </>

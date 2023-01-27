@@ -4,8 +4,8 @@ import getMarkdown from '@lib/get-markdown'
 const Quotes = ({ html }) => {
   return (
     <Page
-      title="Quotes"
-      description="Collection of notable quotes encountered in reading."
+      title="Mashhur so'zlar"
+      description="Ushbu guruh qatnashchilari tomonidan aytilgan esda qoluvchi so'zlar."
     >
       <article dangerouslySetInnerHTML={{ __html: html }} />
     </Page>

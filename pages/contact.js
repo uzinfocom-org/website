@@ -2,24 +2,24 @@ import Page from '@components/page'
 
 const Contact = () => {
   return (
-    <Page title="Contact" footer={false} description="Get in touch.">
+    <Page title="Bo'glanish" footer={false} description="Aloqaga chiqing.">
       <article>
-        <p>Get in touch...</p>
+        <p>Biz bilan bog'laning...</p>
 
         <blockquote>
           <a
-            href="mailto:yuri@katsuki.moe?subject=Hewwo Yuwi... Iwd liwe to tawk with ya!"
+            href="mailto:cctld@uzinfocom.uz?subject=Salom Uzinfocom!"
             className="reset"
           >
-            yuri@katsuki.moe
+            cctld@uzinfocom.uz
           </a>
         </blockquote>
 
-        <p>...or follow me on telegram.</p>
+        <p>...yoki bizni telegramda kuzatib boring.</p>
 
         <blockquote>
-          <a href="https://t.me/s/yurionblog" className="reset">
-            @yurionblog
+          <a href="https://t.me/s/uzinfocom_oss" className="reset">
+            @uzinfocom_oss
           </a>
         </blockquote>
       </article>
