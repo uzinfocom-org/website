@@ -34,7 +34,7 @@ import {
   Play,
   Mail,
   Gitlab,
-  Pin
+  Pin,
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -197,7 +197,7 @@ const themeTranslator = (theme) => {
     case 'light':
       return 'yorqin'
     case 'dark':
-      return 'qorong\'i'
+      return "qorong'i"
     case 'system':
       return 'tizim'
     default:

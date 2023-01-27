@@ -22,8 +22,8 @@ const Index = () => {
         </p>
 
         <p align="center">
-          Sehr yuz berishi uchun <code>⌘ + K</code> yoki <code>Alt + K</code> tugmalarini bosing. Agar
-          ishlamasa tepadagi ⌘ tugmachani bosing...
+          Sehr yuz berishi uchun <code>⌘ + K</code> yoki <code>Alt + K</code>{' '}
+          tugmalarini bosing. Agar ishlamasa tepadagi ⌘ tugmachani bosing...
         </p>
 
         <Spotify />

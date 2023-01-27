@@ -4,10 +4,7 @@ import Link from '@components/link' // eslint-disable-line
 
 const Ideas = ({ html }) => {
   return (
-    <Page
-      title="Rejalar"
-      description="Bizni kelajakda qilingan rejalarimiz."
-    >
+    <Page title="Rejalar" description="Bizni kelajakda qilingan rejalarimiz.">
       <article dangerouslySetInnerHTML={{ __html: html }} />
     </Page>
   )
