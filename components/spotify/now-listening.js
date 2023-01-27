@@ -9,10 +9,14 @@ const Spotify = () => {
   })
 
   if (error)
-    return <p align="center">Oops, I failed to load data from Spotify</p>
+    return (
+      <p align="center">
+        Vay, Spotifydan ma'lumot yuklaguncha xatolik yuz berdi
+      </p>
+    )
 
   if (!data)
-    return <p align="center">Let me check if I&#39;m listening on Spotify...</p>
+    return <p align="center">Qani a'zolarimiz nima eshitishayotgan ekan...</p>
 
   if (!data.isPlaying) return <></>
 

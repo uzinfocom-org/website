@@ -13,7 +13,8 @@ Uzinfocom Open Source uchun ishlab chiqilgan maxsus web sahifa.
 
 ## Ma'lumot
 
-Ushbu websayt Next.js va Node.js texnologiyalarning eng oldingi versiyalarida ishlaydi. Unday hech qancha g'aroyibot narsa yo'q. Oddiygina React komponentlari va CSS yordamida yozilgan web sahifalar.
+Ushbu websayt Next.js va Node.js texnologiyalarning eng oldingi versiyalarida ishlaydi. Unday hech qancha g'aroyibot narsa yo'q. Oddiygina React komponentlari
+va CSS yordamida yozilgan web sahifalar.
 
 > Ushbu websaytdagi hamma kontentlar statik joylashtirilgan, agarda xatolik topsangiz "pull request" yuborishingiz mumkin.
 
@@ -26,7 +27,8 @@ Ushbu websayt Next.js va Node.js texnologiyalarning eng oldingi versiyalarida is
 
 ## Ishga tushurish
 
-Ushbu websaytni ishga tushurish uchun, Node.js ning eng so'nggi LTS versiyasini (hozir 18.x.x) o'rnatishingiz va pnpm ni global tarzda o'rnatishingiz kerak. Keyin quyidagi buyruqlarni bajarishingiz mumkin:
+Ushbu websaytni ishga tushurish uchun, Node.js ning eng so'nggi LTS versiyasini (hozir 18.x.x) o'rnatishingiz va pnpm ni global tarzda o'rnatishingiz kerak.
+Keyin quyidagi buyruqlarni bajarishingiz mumkin:
 
 ```bash
 pnpm install

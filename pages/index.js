@@ -9,19 +9,16 @@ const Index = () => {
         <h1 className="hero">Uzinfocom Open Source</h1>
 
         <p>
-          Senior Dorito Enjoyer,{' '}
-          <Link underline href="/keyboards">
-            keyboard
+          <Link underline href="https://uzinfocom.uz/uz/" external>
+            Uzinfocom
           </Link>{' '}
-          enthusiast, practicing minimalist, and{' '}
-          <Link underline href="/music">
-            electronic lover
-          </Link>{' '}
-          in search of good Rust macro.{' '}
+          Organizatsiyasi tomonidan tashkil topgan va O'zbek Open Source ini
+          rivojlantirishga qaratilgan tashkilot. Bizda har xil katta va kichik
+          loyihalar mavjud. Bizning{' '}
           <Link underline href="/blog">
-            Writing
+            blogimiz
           </Link>{' '}
-          about my coding style and some extra shit.
+          kuzatib borishingiz mumkin.
         </p>
 
         <p>
@@ -36,8 +33,8 @@ const Index = () => {
         </p>
 
         <p align="center">
-          ⌘K or Alt+K to let the dark magic happen or press the ⌘ button on
-          navigation menu...
+          Sehr yuz berishi uchun <code>⌘ + K</code> yoki <code>Alt + K</code> tugmalarini bosing. Agar
+          ishlamasa tepadagi ⌘ tugmachani bosing...
         </p>
 
         <Spotify />
