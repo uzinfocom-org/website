@@ -22,7 +22,7 @@ const Spotify = () => {
 
   return (
     <>
-      <h2 align="center">Listening on Spotify</h2>
+      <h2 align="center">Spotifyda eshitishayabdi</h2>
       <Entry
         key={data.artist + data.title}
         title={data.title}
