@@ -8,9 +8,9 @@ import { gql } from '@apollo/client'
 const Reading = ({ sponsors }) => {
   console.log(sponsors)
   return (
-    <Page title="Sponsors" description="Biz qo'llab quvvatlaydigan dasturchilar!">
+    <Page title="Yordam" description="Biz qo'llab quvvatlayotgan dasturchilar!">
       <article>
-        <h1 align="center">Biz qo'llab quvvatlaydigan dasturchilar!</h1>
+        <h1 align="center">Biz qo'llab quvvatlayotgan dasturchilar!</h1>
 
         {sponsors.map((entry) => {
           return (
@@ -32,8 +32,8 @@ export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query Sponsors {
-        user(login: "katsuki-yuri") {
-          sponsors(first: 100) {
+        organization(login: "uzinfocom-org") {
+          sponsoring(first: 100) {
             nodes {
               ... on User {
                 id
@@ -49,9 +49,11 @@ export async function getServerSideProps() {
     `,
   })
 
+  console.log(data)
+
   return {
     props: {
-      sponsors: data.user.sponsors.nodes,
+      sponsors: data.organization.sponsoring.nodes,
     },
   }
 }
