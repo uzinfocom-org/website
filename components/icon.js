@@ -1,8 +1,8 @@
-const withIcon = (icon) => {
+const withIcon = (icon, px = '0 0 24 24') => {
   const Icon = ({ size = 24, color = 'currentColor' }) => {
     return (
       <svg
-        viewBox="0 0 24 24"
+        viewBox={px}
         width={size}
         height={size}
         fill={color}

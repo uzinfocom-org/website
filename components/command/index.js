@@ -20,21 +20,17 @@ import {
   Pencil,
   Search,
   RSS,
-  Design,
   M6,
   Book,
-  Music,
   Document,
   Quote,
   LightBulb,
   ArrowRight,
   GitHub,
   Telegram,
-  Words,
-  Play,
   Mail,
-  Gitlab,
-  Pin,
+  CCTLD,
+  DC
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -318,12 +314,12 @@ const DefaultItems = () => {
       <Group title="Platformalar">
         <Item
           value="TLD Domenlar"
-          icon={<Words />}
+          icon={<CCTLD />}
           callback={() => window.open('https://cctld.uz', '_blank')}
         />
         <Item
           value="Datacenter"
-          icon={<Gitlab />}
+          icon={<DC />}
           callback={() => window.open('https://dc.uz', '_blank')}
         />
       </Group>
