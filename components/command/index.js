@@ -26,7 +26,6 @@ import {
   Music,
   Document,
   Quote,
-  Words,
   LightBulb,
   ArrowRight,
   GitHub,
@@ -87,7 +86,6 @@ const CommandMenu = memo(() => {
       'g k': () => router.push('/keyboards'),
       'g p': () => router.push('/projects'),
       'g q': () => router.push('/quotes'),
-      'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
       'g z': () => router.push('/sponsors'),
       // Social
@@ -293,7 +291,6 @@ const DefaultItems = () => {
         <Item value="Klavuaturalar" icon={<M6 />} keybind="g k" />
         <Item value="Loyihalar" icon={<Document />} keybind="g p" />
         <Item value="Maqollar" icon={<Quote />} keybind="g q" />
-        <Item value="So'zlar" icon={<Words />} keybind="g w" />
         <Item value="Rejalar" icon={<LightBulb />} keybind="g i" />
         <Item value="Yordam" icon={<Mail />} keybind="g z" />
       </Group>

@@ -6,16 +6,9 @@ const Projects = () => {
     <Page title="Loyihalar" description="Qilinga barcha loyihalar ro'yxati.">
       <article>
         <Entry
-          title="Uzinfocom Open Source"
-          description="Uzinfocom's Open Source Organization"
-          image="https://raw.githubusercontent.com/uzinfocom-org/.github/main/images/new-banner.png"
-          href="https://oss.uzinfocom.uz/"
-        />
-
-        <Entry
           title="Xinux Uzbekistan"
           description="Linux community created in Uzbekistan to develop Linux"
-          image="https://repository-images.githubusercontent.com/331039158/a3990580-848a-11eb-974b-412c7e313f33"
+          image="https://github.com/uzinfocom-org/wallpapers/raw/main/images/xinux-nochr.png"
           href="https://xinux.uz/"
         />
 
