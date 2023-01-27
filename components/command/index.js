@@ -30,6 +30,7 @@ import {
   ArrowRight,
   GitHub,
   Telegram,
+  Words,
   Play,
   Mail,
   Gitlab,
@@ -317,6 +318,11 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Platforms">
+        <Item
+          value="TLD Domenlar"
+          icon={<Words />}
+          callback={() => window.open('https://cctld.uz', '_blank')}
+        />
         <Item
           value="Datacenter"
           icon={<Gitlab />}
