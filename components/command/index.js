@@ -34,13 +34,13 @@ import {
   Play,
   Mail,
   Gitlab,
+  Pin
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
 import { useTheme } from 'next-themes'
 import tinykeys from '@lib/tinykeys'
 import postMeta from '@data/blog.json'
-import Pin from '@components/icons/pin'
 
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
@@ -83,7 +83,6 @@ const CommandMenu = memo(() => {
       'g c': () => router.push('/contact'),
       // Collections
       'g r': () => router.push('/useful'),
-      'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
       'g p': () => router.push('/projects'),
       'g q': () => router.push('/quotes'),
@@ -162,7 +161,7 @@ const CommandMenu = memo(() => {
                   Items === ThemeItems
                     ? 'Mavzu tanlang...'
                     : Items === BlogItems
-                    ? 'Postni qidiring...'
+                    ? 'Mavzu kiriting...'
                     : 'Buyruq kiriting yoki qidiring...'
                 }
               />
@@ -286,9 +285,8 @@ const DefaultItems = () => {
         />
       </Group>
 
-      <Group title="Collection">
+      <Group title="Kolleksiya">
         <Item value="Foydali" icon={<Book />} keybind="g r" />
-        <Item value="Dizayn" icon={<Design />} keybind="g d" />
         <Item value="Klavuaturalar" icon={<M6 />} keybind="g k" />
         <Item value="Loyihalar" icon={<Document />} keybind="g p" />
         <Item value="Maqollar" icon={<Quote />} keybind="g q" />
@@ -296,12 +294,12 @@ const DefaultItems = () => {
         <Item value="Yordam" icon={<Mail />} keybind="g z" />
       </Group>
 
-      <Group title="Navigation">
-        <Item value="Home" icon={<ArrowRight />} keybind="g h" />
-        <Item value="Contact" icon={<ArrowRight />} keybind="g c" />
+      <Group title="Sahifalar">
+        <Item value="Asosiy" icon={<ArrowRight />} keybind="g h" />
+        <Item value="Bog'lanish" icon={<ArrowRight />} keybind="g c" />
       </Group>
 
-      <Group title="Social">
+      <Group title="Sotsal Tizimlar">
         <Item
           value="GitHub"
           icon={<GitHub />}
@@ -317,7 +315,7 @@ const DefaultItems = () => {
         />
       </Group>
 
-      <Group title="Platforms">
+      <Group title="Platformalar">
         <Item
           value="TLD Domenlar"
           icon={<Words />}
