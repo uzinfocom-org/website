@@ -6,7 +6,7 @@ import Entry from '@components/entry'
 const Keyboards = ({ items }) => {
   return (
     <Page
-      title="Keyboards"
+      title="Klaviaturalar"
       description="Uzinfocom Open Source jamoasi a'zolari klaviaturalari."
     >
       <article>
