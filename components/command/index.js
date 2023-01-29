@@ -283,7 +283,7 @@ const DefaultItems = () => {
 
       <Group title="Kolleksiya">
         <Item value="Foydali" icon={<Book />} keybind="g r" />
-        <Item value="Klavuaturalar" icon={<M6 />} keybind="g k" />
+        <Item value="Klaviaturalar" icon={<M6 />} keybind="g k" />
         <Item value="Loyihalar" icon={<Document />} keybind="g p" />
         <Item value="Maqollar" icon={<Quote />} keybind="g q" />
         <Item value="Rejalar" icon={<LightBulb />} keybind="g i" />

@@ -7,7 +7,7 @@ const Keyboards = ({ items }) => {
   return (
     <Page
       title="Keyboards"
-      description="Collection of beautiful 60%, 65%, and TKL keyboards."
+      description="Uzinfocom Open Source jamoasi a'zolari klaviaturalari."
     >
       <article>
         {items.map((entry) => {

@@ -3,7 +3,7 @@ import Entry from '@components/entry'
 
 const Projects = () => {
   return (
-    <Page title="Loyihalar" description="Qilinga barcha loyihalar ro'yxati.">
+    <Page title="Loyihalar" description="Qilingan barcha loyihalar ro'yxati.">
       <article>
         <Entry
           title="Xinux Uzbekistan"
