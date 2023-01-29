@@ -14,7 +14,7 @@ export default async function handler(req, res) {
       {
         name: '/useful',
         desc: 'Get list of bookmarked articles',
-      }
+      },
     ],
   })
 }
