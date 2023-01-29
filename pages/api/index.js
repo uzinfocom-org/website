@@ -5,32 +5,16 @@ export default async function handler(req, res) {
     endpoints: [
       {
         name: '/blog',
-        desc: 'Get blog posts of Yuri',
-      },
-      {
-        name: '/design',
-        desc: 'Get bookmarked website links with awesome design',
+        desc: 'Get blog posts team',
       },
       {
         name: '/keyboard',
-        desc: 'Get list of favorite keyboard models',
+        desc: 'Get list of keyboards used by team members',
       },
       {
-        name: '/minecraft',
-        desc: "Get list of Yuri's favorite musics",
-      },
-      {
-        name: '/reading',
+        name: '/useful',
         desc: 'Get list of bookmarked articles',
-      },
-      {
-        name: '/minecraft',
-        desc: "Get status of Yuri's Minecraft Server",
-      },
-      {
-        name: '/skyline',
-        desc: "Checkout Yuri's Skyline",
-      },
+      }
     ],
   })
 }

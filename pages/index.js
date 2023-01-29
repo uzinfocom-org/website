@@ -4,7 +4,7 @@ import Spotify from '@components/spotify/now-listening'
 
 const Index = () => {
   return (
-    <Page description="Hi, I'm Yuri. Senior Dorito Enjoyer, Linux enthusiast, practicing minimalist, and electronic lover in search of good dota team without aggressive russian kids.">
+    <Page description="Salom! Biz Uzinfocom Open Source miz va biz o'zbek open source jamiyati o'sishiga o'z hissamizni qo'shamiz.">
       <article>
         <h1 className="hero">Uzinfocom Open Source</h1>
 

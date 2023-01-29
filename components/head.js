@@ -1,11 +1,11 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-const defaultOgImage = 'https://katsuki.moe/og.png'
+const defaultOgImage = 'https://floss.uz/og.png'
 
 const Head = ({
-  title = 'Yuri Katsuki',
-  description = "Hi, I'm Yuri. Senior Dorito Enjoyer from Uzbekistan.",
+  title = 'Uzinfocom Open Source',
+  description = "O'zbek Open Source rivojlantiruvchi jamiyat.",
   image = defaultOgImage,
   children,
 }) => {
@@ -35,15 +35,15 @@ const Head = ({
       <meta name="og:image" content={image} />
 
       {/* URL */}
-      <meta name="og:url" content="https://katsuki.moe" />
+      <meta name="og:url" content="https://floss.uz" />
 
       {/* General */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@katsuki-yuri" />
-      <meta name="apple-mobile-web-app-title" content="Yuri's" />
-      <meta name="author" content="Yuri Katsuki" />
+      <meta name="twitter:site" content="@uzinfocom" />
+      <meta name="apple-mobile-web-app-title" content="Uzinfocom Open Source" />
+      <meta name="author" content="Uzinfocom Open Source Devs" />
 
       {/* RSS feed */}
       <link
