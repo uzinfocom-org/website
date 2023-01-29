@@ -7,15 +7,22 @@ const Projects = () => {
       <article>
         <Entry
           title="Xinux Uzbekistan"
-          description="Linux community created in Uzbekistan to develop Linux"
-          image="https://github.com/uzinfocom-org/wallpapers/raw/main/images/xinux-nochr.png"
+          description="Linux ga oid O'zbek hamjamiyati"
+          image="https://floss.uz/favicons/ogs/xinux.png"
+          href="https://xinux.uz/"
+        />
+
+        <Entry
+          title="Korrektor"
+          description="O'zbek tiliga bag'ishlangan lingvistika loyihasi"
+          image="https://floss.uz/favicons/ogs/korrektor.png"
           href="https://xinux.uz/"
         />
 
         <Entry
           title="Osmon"
-          description="A programming language created for Uzbek audience"
-          image="https://www.osmon.dev/og.png"
+          description="Boshlang'ich dasturchilar uchun yaratilgan dasturlash tili"
+          image="https://floss.uz/favicons/ogs/osmon.png"
           href="https://osmon.dev"
         />
       </article>
