@@ -15,11 +15,18 @@
   ],
   "data": [
     {
+      "title": "HyperX Alloy Origins",
+      "description": "Yuri ga tegishli qizil switchlik va kichik ergonomik klaviatura",
+      "image": "http://gamesmea.com/wp-content/uploads/2021/08/HyperX-Alloy-Origins-60-review-3.jpg",
+      "url": "https://gshop.uz/product/2593",
+      "key": "60%"
+    },
+    {
       "title": "Sharkoon PureWriter",
-      "description": "Yuri ga tegishli qizil switchlik va yengil ergonomik klaviatura",
-      "image": "https://www.techtesters.eu/pic/SHARKOONPUREWRITER/404.jpg",
-      "url": "https://en.sharkoon.com/product/PWTKLRGB",
-      "key": "65%"
+      "description": "Yetimdasturchi ga tegishli ko'k switchlik va yengil ergonomik klaviatura",
+      "image": "https://ksr-ugc.imgix.net/assets/029/351/094/781f403bfd495fe330bf4be18b4203e0_original.png?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1591341792&auto=format&frame=1&q=92&s=5befcde073edfb72d1c69a8d55631976",
+      "url": "https://www.keychron.com/products/keychron-k8-tenkeyless-wireless-mechanical-keyboard",
+      "key": "TKL"
     },
     {
       "title": "ErgoDox EZ",
@@ -33,7 +40,14 @@
       "description": "Crystalnyan ga tegishli ko'k switchlik va yengil ergonomik klaviatura",
       "image": "https://www.sharkoon.com/ImgSrv/1000/1000/PureWriter_TKL_RGB/ProductPictures/Keyboard/PureWriter_TKL_RGB/PureWriter_TKL_RGB_white/US/PureWriter_TKL_RGB_White_US_01b.jpg",
       "url": "https://en.sharkoon.com/product/PWTKLRGB",
-      "key": "65%"
+      "key": "TKL"
+    },
+    {
+      "title": "Sharkoon PureWriter",
+      "description": "Phoenixifier ga tegishli qizil switchlik va yengil ergonomik klaviatura",
+      "image": "https://www.techtesters.eu/pic/SHARKOONPUREWRITER/404.jpg",
+      "url": "https://en.sharkoon.com/product/PWTKLRGB",
+      "key": "TKL"
     }
   ]
 }
