@@ -16,7 +16,7 @@ const Projects = () => {
           title="Korrektor"
           description="O'zbek tiliga bag'ishlangan lingvistika loyihasi"
           image="https://floss.uz/favicons/ogs/korrektor.png"
-          href="https://xinux.uz/"
+          href="https://korrektor.uz/"
         />
 
         <Entry
