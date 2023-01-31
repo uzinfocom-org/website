@@ -1,5 +1,5 @@
 <header>
-<img src="https://www.katsuki.moe/favicons/pinned.svg" alt="logo" height="100" align="left">
+<img src="https://oss.uzinfocom.uz/favicons/pinned.svg" alt="logo" height="100" align="left">
 <h1 style="display: inline">Website</h1>
 
 Uzinfocom Open Source uchun ishlab chiqilgan maxsus web sahifa.

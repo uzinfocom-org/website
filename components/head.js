@@ -1,7 +1,7 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-const defaultOgImage = 'https://floss.uz/og.png'
+const defaultOgImage = 'https://oss.uzinfocom.uz/og.png'
 
 const Head = ({
   title = 'Uzinfocom Open Source',
@@ -35,7 +35,7 @@ const Head = ({
       <meta name="og:image" content={image} />
 
       {/* URL */}
-      <meta name="og:url" content="https://floss.uz" />
+      <meta name="og:url" content="https://oss.uzinfocom.uz" />
 
       {/* General */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +49,7 @@ const Head = ({
       <link
         rel="alternate"
         type="application/rss+xml"
-        title="RSS Feed for katsuki.moe"
+        title="RSS Feed for Uzinfocom Open Source"
         href="/feed.xml"
       />
 
