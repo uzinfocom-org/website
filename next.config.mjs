@@ -8,6 +8,11 @@ const nextConfig = {
         destination: 'https://discord.gg/JkXFQpScFj',
         permanent: true,
       },
+      {
+        source: '/telegram',
+        destination: 'https://t.me/uzinfocom_oss',
+        permanent: true,
+      },
     ]
   },
   output: 'standalone',
