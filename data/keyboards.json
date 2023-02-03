@@ -11,15 +11,19 @@
     {
       "name": "TKL",
       "color": "blue-gray"
+    },
+    {
+      "name": "FULL",
+      "color": "green"
     }
   ],
   "data": [
     {
-      "title": "HyperX Alloy Origins",
-      "description": "Yuri ga tegishli qizil switchlik va kichik ergonomik klaviatura",
-      "image": "http://gamesmea.com/wp-content/uploads/2021/08/HyperX-Alloy-Origins-60-review-3.jpg",
-      "url": "https://hyperx.com/products/hyperx-alloy-origins-60-mechanical-gaming-keyboard?variant=42344887353501",
-      "key": "60%"
+      "title": "Apple Magic Keyboard JIS",
+      "description": "Yuri ga tegishli membrana va yapon sxemasidagi klaviatura",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQ052J?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1497460977082",
+      "url": "https://www.apple.com/shop/product/MQ052J/A/magic-keyboard-with-numeric-keypad-japanese",
+      "key": "FULL"
     },
     {
       "title": "Keychron K8",
