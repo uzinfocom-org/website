@@ -15,13 +15,14 @@
     {
       "name": "FULL",
       "color": "green"
+
     }
   ],
   "data": [
     {
       "title": "Apple Magic Keyboard JIS",
       "description": "Yuri ga tegishli membrana va yapon sxemasidagi klaviatura",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQ052J?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1497460977082",
+      "image": "https://static.mercdn.net/item/detail/orig/photos/m32165110963_1.jpg",
       "url": "https://www.apple.com/shop/product/MQ052J/A/magic-keyboard-with-numeric-keypad-japanese",
       "key": "FULL"
     },
