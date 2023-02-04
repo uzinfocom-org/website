@@ -269,7 +269,7 @@ const DefaultItems = () => {
       <Group title="Blog">
         <Item value="Blog" icon={<Pencil />} keybind="g b" />
         <Item
-          value="Postni qidirish..."
+          value="Izlash..."
           icon={<Search />}
           closeOnCallback={false}
           callback={() => setPages([...pages, BlogItems])}
@@ -285,7 +285,7 @@ const DefaultItems = () => {
         <Item value="Foydali" icon={<Book />} keybind="g r" />
         <Item value="Klaviaturalar" icon={<M6 />} keybind="g k" />
         <Item value="Loyihalar" icon={<Document />} keybind="g p" />
-        <Item value="Maqollar" icon={<Quote />} keybind="g q" />
+        <Item value="Iqtiboslar" icon={<Quote />} keybind="g q" />
         <Item value="Rejalar" icon={<LightBulb />} keybind="g i" />
         <Item value="Yordam" icon={<Mail />} keybind="g z" />
       </Group>
@@ -295,7 +295,7 @@ const DefaultItems = () => {
         <Item value="Bog'lanish" icon={<ArrowRight />} keybind="g c" />
       </Group>
 
-      <Group title="Sotsal Tizimlar">
+      <Group title="Ijtimoiy tarmoqlar">
         <Item
           value="GitHub"
           icon={<GitHub />}
