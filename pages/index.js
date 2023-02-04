@@ -23,7 +23,7 @@ const Index = () => {
 
         <p align="center">
           Sehr yuz berishi uchun <code>⌘ + K</code> yoki <code>Alt + K</code>{' '}
-          tugmalarini bosing. Agar ishlamasa tepadagi ⌘ tugmachani bosing...
+          tugmalarini bosing. Agarda ushbu usul ish bermasa, yuqoridagi ⌘ tugmasi orqali harakatni davom ettirishingiz mumkin...
         </p>
 
         {/*<Spotify />*/}
