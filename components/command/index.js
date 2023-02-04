@@ -158,7 +158,7 @@ const CommandMenu = memo(() => {
                     ? 'Mavzu tanlang...'
                     : Items === BlogItems
                     ? 'Mavzu kiriting...'
-                    : 'Buyruq kiriting yoki qidiring...'
+                    : 'Buyruqni kiriting yoki qidiring...'
                 }
               />
             </div>
