@@ -5,9 +5,11 @@ slug: php-dasturlash-tilida-oyin-yaratish-4-qism
 date: December 6, 2022
 ---
 
-Avvalgi qismda murakkabroq harakat jarayoniga ega ilon o'yini yaratish haqida so'z olib borilgandi. Ushbu qismda yanada jarayonni mukammalroq qilish uchun **action** doirasida kiradigan otishma o'yini yaratish haqida bosh qotiamiz.
+Avvalgi qismda murakkabroq harakat jarayoniga ega ilon o'yini yaratish haqida so'z olib borilgandi. Ushbu qismda yanada jarayonni mukammalroq qilish uchun
+**action** doirasida kiradigan otishma o'yini yaratish haqida bosh qotiamiz.
 
-O'yin konsepsiyasiga keladigan bo'lsak ASCII asosida o'yin jadvali o'ngdan chapga tomon harakatlanib boradi. O'yinda o'yinchi kemasi va dushmanlar doimiy harakatlanib boradi. O'yinchi kemasi dushmanlarga tegib ketmagan holatda dushmanlarni o'qga tutishi lozim bo'ladi.
+O'yin konsepsiyasiga keladigan bo'lsak ASCII asosida o'yin jadvali o'ngdan chapga tomon harakatlanib boradi. O'yinda o'yinchi kemasi va dushmanlar doimiy
+harakatlanib boradi. O'yinchi kemasi dushmanlarga tegib ketmagan holatda dushmanlarni o'qga tutishi lozim bo'ladi.
 
 Otishma o'yinini yaratish uchun bir nechta aniqlash kerak bo'lgan elementlar kerak bo'ladi.
 
@@ -26,7 +28,10 @@ class Entity {
   	}
 }
 ```
-Entity obyekti o'yin uchun kerakli komponentlarni yaratishga ishlatiladi. Qo'shimcha tarzda kema uchun voqea joyida harakatlanishi va dushmanlar tomon o'q uzishi uchun yana bir nechta xususiyatlar ham kerak bo'ladi.
+
+Entity obyekti o'yin uchun kerakli komponentlarni yaratishga ishlatiladi. Qo'shimcha tarzda kema uchun voqea joyida harakatlanishi va dushmanlar tomon o'q
+uzishi uchun yana bir nechta xususiyatlar ham kerak bo'ladi.
+
 ```php
 class Spaceship extends Entity {
 	public $movementX = 0;
@@ -37,7 +42,10 @@ class Spaceship extends Entity {
 class Enemy extends Entity {}
 class Bullet extends Entity {}
 ```
-Umumiy o'yin bitta `Scene` obyekti orqali boshqariladi. Ushbu obyekt o'yin uchun zarur bo'lgan barcha komponentlarni saqlaydi va o'yinni o'yinchi tomonidan boshqarishga imkon beradi. Obyekt konstruktori o'yin sahnasining o'lchamlarini saqlaydi va keyingi bosqichda o'yinchining kema obyektini yaratadi. 
+
+Umumiy o'yin bitta `Scene` obyekti orqali boshqariladi. Ushbu obyekt o'yin uchun zarur bo'lgan barcha komponentlarni saqlaydi va o'yinni o'yinchi tomonidan
+boshqarishga imkon beradi. Obyekt konstruktori o'yin sahnasining o'lchamlarini saqlaydi va keyingi bosqichda o'yinchining kema obyektini yaratadi.
+
 ```php
 class Scene {
 	public $height;
@@ -55,7 +63,11 @@ class Scene {
   	}
 }
 ```
-Kemani harakatlantirish uchun moveShip() funskiyasini qo'llash kerak bo'ladi. Bu joriy harakat ya'ni x, y ni oladi va uni kemaning joylashuv xususiyatlariga qo'llaydi. O'yinchining sahna chegarasidan tashqariga chiqishiga yo'l qo'ymaslik va yarim yo'l nuqtasiga yetganda kemani to'xtatish uchun harakatlarga ba'zi bir mantiqlar ham qo'llaniladi.
+
+Kemani harakatlantirish uchun moveShip() funskiyasini qo'llash kerak bo'ladi. Bu joriy harakat ya'ni x, y ni oladi va uni kemaning joylashuv xususiyatlariga
+qo'llaydi. O'yinchining sahna chegarasidan tashqariga chiqishiga yo'l qo'ymaslik va yarim yo'l nuqtasiga yetganda kemani to'xtatish uchun harakatlarga ba'zi bir
+mantiqlar ham qo'llaniladi.
+
 ```php
 public function moveShip() {
 	$this->ship->positionX += $this->ship->movementX;
@@ -65,10 +77,10 @@ public function moveShip() {
 
     if ( $this->ship->positionX < 0 ) {
 	    $this->ship->positionX = 0;
-    }	
+    }
     if ( $this->ship->positionX >= $this->height ) {
 	    $this->ship->positionX = $this->height - 1;
-	}	
+	}
     if ( $this->ship->positionY < 0 ) {
 	    $this->ship->positionY = 0;
 	}
@@ -77,7 +89,11 @@ public function moveShip() {
 	}
 }
 ```
-Kemani harakatga keltirish bilan bir qatorda kemadan o'q otishni ham ta'minlash lozim. Kema "o't ochish" rejimida bo'lganda o'qning pozitsiyasi uchun asos sifatida kema turgan joydan foydalanib, yangi o'q obyekti yaratiladi. O'q otilgandan so'ng kema uchun o'q ochish holatini o'chirib qo'yamiz. Ya'ni bir vaqtning o'zida faqat bitta o'q o'tishga ruxsat beramiz.
+
+Kemani harakatga keltirish bilan bir qatorda kemadan o'q otishni ham ta'minlash lozim. Kema "o't ochish" rejimida bo'lganda o'qning pozitsiyasi uchun asos
+sifatida kema turgan joydan foydalanib, yangi o'q obyekti yaratiladi. O'q otilgandan so'ng kema uchun o'q ochish holatini o'chirib qo'yamiz. Ya'ni bir vaqtning
+o'zida faqat bitta o'q o'tishga ruxsat beramiz.
+
 ```php
 public function shoot() {
 	if ( $this->ship->fire == TRUE ) {
@@ -86,7 +102,10 @@ public function shoot() {
 	}
 }
 ```
-Foydalanuvchi tomonidan kiritilgan hodisalarni kemaga qo'llash uchun avvalgi qismlarda ishlab chiqilgan funksiyalarning ma'lum qismlaridan foydalanamiz. Bu orqali keramani harakatga keltirish, o'q otish kabi amallarni bajarishimiz mumkin bo'ladi. Qo'shimcha tarzda o'yinni to'xtatish uchun **ESC** tugmasini ham tinglashni qo'shamiz.
+
+Foydalanuvchi tomonidan kiritilgan hodisalarni kemaga qo'llash uchun avvalgi qismlarda ishlab chiqilgan funksiyalarning ma'lum qismlaridan foydalanamiz. Bu
+orqali keramani harakatga keltirish, o'q otish kabi amallarni bajarishimiz mumkin bo'ladi. Qo'shimcha tarzda o'yinni to'xtatish uchun **ESC** tugmasini ham
+tinglashni qo'shamiz.
 
 ```php
 public function action( $stdin ) {
@@ -140,7 +159,8 @@ private function translateKeypress( $string ) {
 }
 ```
 
-O'qlarni o'yin sahnasi bo'ylab harakatlantirish juda oddiy. Bu uchun shunchaki sahnadagi har bir o'qning y pozitsiyasini oshirish kifoya. Bu o'qlarni gorizontal holatda sahnaning o'ng tomoniga siljishiga yordam beradi.
+O'qlarni o'yin sahnasi bo'ylab harakatlantirish juda oddiy. Bu uchun shunchaki sahnadagi har bir o'qning y pozitsiyasini oshirish kifoya. Bu o'qlarni gorizontal
+holatda sahnaning o'ng tomoniga siljishiga yordam beradi.
 
 ```php
 public function moveBullets() {
@@ -149,7 +169,10 @@ public function moveBullets() {
 	}
 }
 ```
-O'yin jarayonida dushmanlar haqida ham unutmaslik lozim. Quyidagi funksiya o'yin sahnasida doimiy 15 dona tasodifiy dushman haraktini generatsiya qilib beradi. Agarda o'yinchi bir dushmanni yo'q qilsa funksiya massivda kamaygan elementni tasodifiy kordinatada to'ldirib boradi.
+
+O'yin jarayonida dushmanlar haqida ham unutmaslik lozim. Quyidagi funksiya o'yin sahnasida doimiy 15 dona tasodifiy dushman haraktini generatsiya qilib beradi.
+Agarda o'yinchi bir dushmanni yo'q qilsa funksiya massivda kamaygan elementni tasodifiy kordinatada to'ldirib boradi.
+
 ```php
 public function spawnEnemies() {
 	if ( count( $this->enemies ) < 15) {
@@ -159,7 +182,10 @@ public function spawnEnemies() {
 	}
 }
 ```
-Dushmanlarni o'yin sahnasida harakatlantirish uchun biroz mantiqiy harakat talab qilinadi. Quyidagi funksiya orqali dushmanni otib tashlash jarayoniga aniqlashtirish mumkin bo'ladi. Agar dushman o'yin sahnasining chap qismiga yetib kelgan bo'lsa uni voqea joyidan hech qanday hodisasiz olib tashlash mumkin.  Yoki dushman o'q bilan bir pozitsiyada bo'lsa, ikkalasi ham o'yin sahnadan o'chirishga to'g'ri keladi va o'yinchining umumiy baliga +1 qo'shish kerak bo'ladi. 
+
+Dushmanlarni o'yin sahnasida harakatlantirish uchun biroz mantiqiy harakat talab qilinadi. Quyidagi funksiya orqali dushmanni otib tashlash jarayoniga
+aniqlashtirish mumkin bo'ladi. Agar dushman o'yin sahnasining chap qismiga yetib kelgan bo'lsa uni voqea joyidan hech qanday hodisasiz olib tashlash mumkin.
+Yoki dushman o'q bilan bir pozitsiyada bo'lsa, ikkalasi ham o'yin sahnadan o'chirishga to'g'ri keladi va o'yinchining umumiy baliga +1 qo'shish kerak bo'ladi.
 
 ```php
 public function moveEnemies() {
@@ -170,7 +196,7 @@ public function moveEnemies() {
 	        unset( $this->enemies[ $enemyId ] );
         	continue;
 		}
-      		
+
       	foreach ( $this->bullets as $bulletId => $bullet ) {
 	        if ( $bullet->positionX == $enemy->positionX && ( $bullet->positionY == $enemy->positionY || $bullet->positionY == $enemy->positionY - 1 ) ) {
 	          	unset( $this->enemies[ $enemyId ] );
@@ -181,6 +207,7 @@ public function moveEnemies() {
 	}
 }
 ```
+
 Agarda o'yinchi kemasi va dushman bir xil kordinataga mos kelsa o'yinni tugatish kerak bo'ladi.
 
 ```php
@@ -193,11 +220,13 @@ public function gameOver() {
 }
 ```
 
-Yuqoridagi elementlarning barchasi joyida bo'lsa bemalol o'yin sahnasini ishlab chiqish mumkin. Ushbu qayta ishlash usuli sahnaning balandligi va kengligi bo'ylab aylanadi va sahna ichidagi har bir elementni chop etadi.
+Yuqoridagi elementlarning barchasi joyida bo'lsa bemalol o'yin sahnasini ishlab chiqish mumkin. Ushbu qayta ishlash usuli sahnaning balandligi va kengligi
+bo'ylab aylanadi va sahna ichidagi har bir elementni chop etadi.
+
 ```php
 public function renderGame() {
 	$output = '';
-	
+
 	for ( $i = 0; $i < $this->height; $i++ ) {
 	    for ( $j = 0; $j < $this->width; $j++ ) {
 	        $cell = ( $this->ship->positionX == $i && $this->ship->positionY == $j ) ? '>' : ' ';
@@ -217,7 +246,9 @@ public function renderGame() {
 }
 ```
 
-O'yinni ishga tushirish uchun balandlik va kenglikga asoslanga `Scene` (Sahna) obyektini yaratish, foydalanuvchidan kelayotgan kiritishilarni aniqlash uchun oqimni tinglovchi cheksiz sikl yaratish lozim.
+O'yinni ishga tushirish uchun balandlik va kenglikga asoslanga `Scene` (Sahna) obyektini yaratish, foydalanuvchidan kelayotgan kiritishilarni aniqlash uchun
+oqimni tinglovchi cheksiz sikl yaratish lozim.
+
 ```php
 $scene = new Scene( 50, 10 ); // kenglik, balandlik
 
@@ -239,19 +270,21 @@ while ( 1 ) {
 }
 ```
 
-Ushbu kod ishga tushirilganda o'yinchining kemasi bilan sahna ko'rsatila boshlanadi. Bir necha soniyadan so'ng dushmanlar paydo bo'la boshlaydi va bo'sh joydan foydalanib, ularga o'q uzish mumkin. Agar o'q dushmanga yetib borsa dushman ochkolar soni +1 hisobda oshirib boriladi.
+Ushbu kod ishga tushirilganda o'yinchining kemasi bilan sahna ko'rsatila boshlanadi. Bir necha soniyadan so'ng dushmanlar paydo bo'la boshlaydi va bo'sh joydan
+foydalanib, ularga o'q uzish mumkin. Agar o'q dushmanga yetib borsa dushman ochkolar soni +1 hisobda oshirib boriladi.
 
-```                                    
-                                       X          
-                                -- -   X        X 
-                     - - - -                      
-                                                  
-            - - -                   X     X       
-     >                              X             
-                                       X          
-                          X    X              X   
-                                                  
+```
+                                       X
+                                -- -   X        X
+                     - - - -
+
+            - - -                   X     X
+     >                              X
+                                       X
+                          X    X              X
+
 
 Ochkolar: 1
 ```
+
 O'yin kodi to'liq variantda: [Github](https://gist.github.com/yetimdasturchi/9be18e7c4e9841c5d72ff1d5b99d1aeb)

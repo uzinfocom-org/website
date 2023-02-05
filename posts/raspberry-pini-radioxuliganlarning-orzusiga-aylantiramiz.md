@@ -1,6 +1,6 @@
 ---
-title: "Raspberry PIni radioxuliganlarning orzusiga aylantiramiz"
-description: "RPI bizga ortiqcha elektron komponentlarsiz radio uzatgich yaratishni amalga oshirishga yordam beradi..."
+title: 'Raspberry PIni radioxuliganlarning orzusiga aylantiramiz'
+description: 'RPI bizga ortiqcha elektron komponentlarsiz radio uzatgich yaratishni amalga oshirishga yordam beradi...'
 slug: raspberry-pini-radioxuliganlarning-orzusiga-aylantiramiz
 date: August 6, 2022
 ---
@@ -9,30 +9,32 @@ date: August 6, 2022
 
 ![rpi](https://www.distrelec.de/Web/WebShopImages/landscape_large/9-/01/Raspberry%20Pi-PI4%20MODEL%20B_1GB-30152779-01.jpg)
 
-RPI bank kartasi hajmidagi kompyuter. U dastlab kamchiqim qurilma sifatida informatika fanini o'qitish uchun ishlab chiqilgan. Ammo keyinchalik o'quvchilar qolib robototexniklar orasida keng tarqaldi.
+RPI bank kartasi hajmidagi kompyuter. U dastlab kamchiqim qurilma sifatida informatika fanini o'qitish uchun ishlab chiqilgan. Ammo keyinchalik o'quvchilar
+qolib robototexniklar orasida keng tarqaldi.
 
-Uning yutug'i shundaki, kichkinagina qurilma sizga 133Mhzdan 1.5Ghz chastotaga ega protsessor, 264kb operativ xotiradan boshlab 8Gbgacha bo'lgan va bemalol 4K grafika bilan ishlay oladigan imkoniyatni yaratib beradi.
+Uning yutug'i shundaki, kichkinagina qurilma sizga 133Mhzdan 1.5Ghz chastotaga ega protsessor, 264kb operativ xotiradan boshlab 8Gbgacha bo'lgan va bemalol 4K
+grafika bilan ishlay oladigan imkoniyatni yaratib beradi.
 
-Kompyuter o'ziga asos sifatida linuxdan foydalanadi. Lekin u uchun ishlab chiqilgan windows iot, freebsd kabi oslar ham yo'q emas. Bugungi kunda 30ga yaqin keng qamrovdagi linux distrolar raspberryda aktiv ishlay oladi. Ulardan mukammal varianti Debian asosida qurilgan RasPiOS.
+Kompyuter o'ziga asos sifatida linuxdan foydalanadi. Lekin u uchun ishlab chiqilgan windows iot, freebsd kabi oslar ham yo'q emas. Bugungi kunda 30ga yaqin keng
+qamrovdagi linux distrolar raspberryda aktiv ishlay oladi. Ulardan mukammal varianti Debian asosida qurilgan RasPiOS.
 
 ## Radio nima?
 
-Sodda qilib aytsak, radio bu elektromagnit to'lqinlarini chiqaradigan yoki ularga javob beradigan qurilma. Eng sodda radio antenna, kirish konturi, demodulator kabi elementlardan tashkil topgan.
+Sodda qilib aytsak, radio bu elektromagnit to'lqinlarini chiqaradigan yoki ularga javob beradigan qurilma. Eng sodda radio antenna, kirish konturi, demodulator
+kabi elementlardan tashkil topgan.
 
-Kirish konturi
-: Radio antennalariga kelib urilayotgan elektromagnit to'lqinlarni kerakli diapazonga qarab qabul qiluvchi blok.
-: Misol: Siz kerakli tv kanal yoki radio eshittirish uchun chastotani sozlash vaqtidagi jarayon aynan shu qismda ta'sir beradi.
+Kirish konturi : Radio antennalariga kelib urilayotgan elektromagnit to'lqinlarni kerakli diapazonga qarab qabul qiluvchi blok. : Misol: Siz kerakli tv kanal
+yoki radio eshittirish uchun chastotani sozlash vaqtidagi jarayon aynan shu qismda ta'sir beradi.
 
-Modulator
-: Garmonik tebranishlarni sun'iy hosil qilib beruvchi blok. Shu orqali yuqori va past chastotalarni bir-biriga qo'shib uzoq masfaga yuborishni ta'minlaydi.
-: Misol: Oddiygina audio bu past chastotali signal. Uni uzoqroq masofaga yuborish uchun unga yuqori chastota qo'shish kerak bo'ladi. 
+Modulator : Garmonik tebranishlarni sun'iy hosil qilib beruvchi blok. Shu orqali yuqori va past chastotalarni bir-biriga qo'shib uzoq masfaga yuborishni
+ta'minlaydi. : Misol: Oddiygina audio bu past chastotali signal. Uni uzoqroq masofaga yuborish uchun unga yuqori chastota qo'shish kerak bo'ladi.
 
-Demodulator
-: Kirish konturi tomonidan qabul qilingan to'lqinlarni past va yuqori chastotaga ajratuvchi qism. 
-: Misol: Buyerda yuqori chastotadan yuqorida modulator tomonidan yuborilgan audioni ajratib olinadi. Audio kuchaytirgichka, yuqori chastotali signal esa shunchaki boshqa bir elektr sig'imiga sarflanib yuboriladi (chunki endi bu keraksiz).
+Demodulator : Kirish konturi tomonidan qabul qilingan to'lqinlarni past va yuqori chastotaga ajratuvchi qism. : Misol: Buyerda yuqori chastotadan yuqorida
+modulator tomonidan yuborilgan audioni ajratib olinadi. Audio kuchaytirgichka, yuqori chastotali signal esa shunchaki boshqa bir elektr sig'imiga sarflanib
+yuboriladi (chunki endi bu keraksiz).
 
- Eng sodda modulator (Tebranishlar generatori) ko'rinishi:
- 
+Eng sodda modulator (Tebranishlar generatori) ko'rinishi:
+
 ![enter image description here](https://i.ibb.co/f2vFKyp/image.png)
 
 Eng sodda radio ko'rinishi:
@@ -41,22 +43,29 @@ Eng sodda radio ko'rinishi:
 
 ## Radio xuligan kim?
 
-Radio xuligan bu bugungi kundagi qora xakerlarning bir ko'rinishi. Qora xakerlar buzish bilan shug'ullanishsa radioxuliganlar noqonuniy radio eshittirishlar olib borish bilan shug'ullanishadi. Hozirda bunday shaxslar juda kam. 20-asrning ikkinchi yarmida ya'ni radio erasining rivojlangan davrida bu juda rivojlangan ko'ngilochar bezoriliklardan biri bo'lgan.
+Radio xuligan bu bugungi kundagi qora xakerlarning bir ko'rinishi. Qora xakerlar buzish bilan shug'ullanishsa radioxuliganlar noqonuniy radio eshittirishlar
+olib borish bilan shug'ullanishadi. Hozirda bunday shaxslar juda kam. 20-asrning ikkinchi yarmida ya'ni radio erasining rivojlangan davrida bu juda rivojlangan
+ko'ngilochar bezoriliklardan biri bo'lgan.
 
 ## RPIni radioxuliganlar orzusiga qanday aylantiramiz?
 
-Yuqoridagi qisqacha tariflarning o'zidayoq tasavvur qilish mumkinki oddiygina radio uzatgich yasashning o'zi elektronika tomondan juda katta bir muammoga aylanadi. RPI bizga ortiqcha elektron komponentlarni titkilamasdan shunchaki kod yozishni o'zi bilan ushbu ishni amalga oshirishga yordam beradi.
+Yuqoridagi qisqacha tariflarning o'zidayoq tasavvur qilish mumkinki oddiygina radio uzatgich yasashning o'zi elektronika tomondan juda katta bir muammoga
+aylanadi. RPI bizga ortiqcha elektron komponentlarni titkilamasdan shunchaki kod yozishni o'zi bilan ushbu ishni amalga oshirishga yordam beradi.
 
 ## Bu qanday ishlaydi?
 
-Kundalik turmushdagi deyarli barcha qurilmalar o'zidan elektromagnit to'lqinlar tarqatadi. Odatda ular bizga kerakli diapazonga yetishi yoki undan ortib ketishi ham mumkin. Misol sabbuferda musiqa eshitayotgan vaqtda qo'ng'iroq bo'lib qolishi oqibatidagi chiyillashni ko'pchilik sezgan bo'lsa kerak. Bu ham shunday biz ahamiyat bermaydigan jarayonlardan biri. Kompyuterda ham bunday holat doimiy kuzatiladi. 
+Kundalik turmushdagi deyarli barcha qurilmalar o'zidan elektromagnit to'lqinlar tarqatadi. Odatda ular bizga kerakli diapazonga yetishi yoki undan ortib ketishi
+ham mumkin. Misol sabbuferda musiqa eshitayotgan vaqtda qo'ng'iroq bo'lib qolishi oqibatidagi chiyillashni ko'pchilik sezgan bo'lsa kerak. Bu ham shunday biz
+ahamiyat bermaydigan jarayonlardan biri. Kompyuterda ham bunday holat doimiy kuzatiladi.
 
-Raspberry linux yadrosi asosida ishlaydi. Biz esa /dev/mem va mmap yordamida 0x20000000 manziliga periferik shinani virtualizatsiya qilamiz ( *Linuxda /dev/mem asosan periferik qurilmalar bilan bog'liq kiritish va chiqarish xotira manzillariga yo'l sifatida ishlatiladi* ). Shundan so'ng raspberryda taktotali generator ishga tushib GPIO4 portiga  chiqish uchun o'rnatiladi. 
+Raspberry linux yadrosi asosida ishlaydi. Biz esa /dev/mem va mmap yordamida 0x20000000 manziliga periferik shinani virtualizatsiya qilamiz ( _Linuxda /dev/mem
+asosan periferik qurilmalar bilan bog'liq kiritish va chiqarish xotira manzillariga yo'l sifatida ishlatiladi_ ). Shundan so'ng raspberryda taktotali generator
+ishga tushib GPIO4 portiga chiqish uchun o'rnatiladi.
 
 ## Kodlashtirish
 
-
 Konstantalarni sozlash:
+
 ```c
 #define CM_GP0CTL (0x7e101070) // Taktota generatori boshqarish
 #define GPFSEL0 (0x7E200000)   // GPIO liniyasi
@@ -103,7 +112,7 @@ void setup_fm(int state) {
         char FSEL9 : 3;
         char RESERVED : 2;
     };
-    
+
     int tmp = ACCESS(GPFSEL0, int);
     tmp = (tmp | (1<<14)) & ~ ((1<<12) | (1<<13));
     ACCESS(GPFSEL0, int) = tmp;
@@ -137,6 +146,7 @@ void modulate(int period) {
     ACCESS(CM_GP0DIV, struct CM_GP0DIV_T) = (struct CM_GP0DIV_T) { period, 0x5a };
 }
 ```
+
 To'lqinli audioni ( Wav ) modulatsiya jarayoni uchun uzatish:
 
 ```c
@@ -155,7 +165,7 @@ void playWav(char *filename, int mod, float bw) {
     while (read(fp, data, 1024)) {
 
         for (int j = 0; j<1024/2; j++) {
-            
+
             // Modulyatsiya davrini hisoblash
             float dval = (int) floor( (float) ( data[ j ] ) / 65536.0f * bw );
 
@@ -166,7 +176,9 @@ void playWav(char *filename, int mod, float bw) {
     }
 }
 ```
+
 Umumiy funksiyalarni birlashtirish
+
 ```c
 int main(int argc, char **argv) {
     signal(SIGTERM, &shutdown_fm);
@@ -196,26 +208,35 @@ int main(int argc, char **argv) {
     return 0;
 }
 ```
+
 Kompiliyatsiya jarayoni:
+
 ```bash
 gcc -std=c99 -g radio.c -o radio -lm
 ```
 
 Modulatorni ishga tushirish:
+
 - 100.00 bu uzatish chastotasi
 - 25 modulatsiya kuchi
 
-*Eslatma: To'lqin va to'lqin kuchi qanchalik yuqori bo'lsa cpudan shunchalik ko'p resurs talab qilinadi*
+_Eslatma: To'lqin va to'lqin kuchi qanchalik yuqori bo'lsa cpudan shunchalik ko'p resurs talab qilinadi_
+
 ```bash
 ./radio /dev/stdin 100.00 25
 ```
+
 ## Eslatma
-Maxsus ruxsatnomasiz radioeshittirishlar qilish, uzoq masofaga elektromagnit to'lqinlar yuborish O'zbekiston Respublikasi qonunchiligida taqiqlangan. 
+
+Maxsus ruxsatnomasiz radioeshittirishlar qilish, uzoq masofaga elektromagnit to'lqinlar yuborish O'zbekiston Respublikasi qonunchiligida taqiqlangan.
 
 Ushbu maqola faqatgina ta'lim maqsadida yozildi.
 
 ## Xulosa
 
-Raspberry PI shunchaki linux distro o'rnatib test qilishdan tashqari juda ko'plab maqsadlar uchun foydali bo'la oladigan qurilma hisoblanadi. Ushbu maqolada birgina RPI va C tilidan foydalanib fm diapazon uchun ishlaydigan radio modulator yasash ko'rsatildi. Agarda siz buni elektron komponentlar bilan termoqchi bo'lsangiz bu juda bosh og'riq jarayon. Oldschool radiotexniklar bundan juda yaxshi xabardor. 
+Raspberry PI shunchaki linux distro o'rnatib test qilishdan tashqari juda ko'plab maqsadlar uchun foydali bo'la oladigan qurilma hisoblanadi. Ushbu maqolada
+birgina RPI va C tilidan foydalanib fm diapazon uchun ishlaydigan radio modulator yasash ko'rsatildi. Agarda siz buni elektron komponentlar bilan termoqchi
+bo'lsangiz bu juda bosh og'riq jarayon. Oldschool radiotexniklar bundan juda yaxshi xabardor.
 
-Shunday ekan atrofingizdagi qurilmalarni har doim qanday ishlashini kuzatishga o'rganing. Ular ba'zan juda murakkab bo'lsada juda qiziqarli narsalarni o'rgata oladi.
+Shunday ekan atrofingizdagi qurilmalarni har doim qanday ishlashini kuzatishga o'rganing. Ular ba'zan juda murakkab bo'lsada juda qiziqarli narsalarni o'rgata
+oladi.
