@@ -5,27 +5,25 @@ slug: led-ring-uchun-ikkinchi-hayotni-bagshlash
 date: September 12, 2022
 ---
 
-Yaqinda veb kamera yorug'ligini ta'minlash uchun do'kondan Led RING sotib olishga to'g'ri keldi. Boshida muammosiz ishladi. Bir kun o'tgach esa Gobliddin aka
-aytgandek Xitoyni moli parot qilishni boshladi. Aniqroq aytadigan bo'lsam platadagi controller ishdan chiqqan edi.
+Yaqinda veb kamera yorug'ligini ta'minlash uchun do'kondan Led RING sotib olishga to'g'ri keldi. Boshida muammosiz ishladi. Bir kun o'tgach esa Gobliddin aka aytgandek Xitoyni moli parot qilishni boshladi. Aniqroq aytadigan bo'lsam platadagi controller ishdan chiqqan edi. 
 
 ![led ring](https://i.ibb.co/DrDt4jB/godox-lr-120b-led-ring-light.jpg)
 
-Boshida shunchaki controllerni amashtirib tuzatish fikri tug'ildi. Lekin platani ochib ko'rganimda doimgidek mikrosxema haqida hech qanday ma'lumotlar mavjud
-emas.
+Boshida shunchaki controllerni amashtirib tuzatish fikri tug'ildi. Lekin platani ochib ko'rganimda doimgidek mikrosxema haqida hech qanday ma'lumotlar mavjud emas. 
 
 ![plata](https://i.ibb.co/RTLz6J0/photo-2022-06-19-19-36-00.jpg)
 
-Asosiysi svetodiodlar butunligi. Platadagi controller ishdan chiqishi esa boshqa bir foydali tomonga yordam berdi. Led ring uchun ikkita svetodiod ishlatilgan,
-biri sarg'ish, yana bir oq fon uchun. Controller vazifasi svetodiodni o'chirib yoqish, ikkita svetodiod rejimini almashtirish va yorqinlikni nazorat qilish edi.
+Asosiysi svetodiodlar butunligi. Platadagi controller ishdan chiqishi esa boshqa bir foydali tomonga yordam berdi. 
+ Led ring uchun ikkita svetodiod ishlatilgan, biri sarg'ish, yana bir oq fon uchun. Controller vazifasi svetodiodni o'chirib yoqish, ikkita svetodiod rejimini almashtirish va yorqinlikni nazorat qilish edi.
 
-Controllerdan keyingi o'rinlarda svetodiod uchun ikkita mosfet (led dimmer) qo'yilgan ekan. Demak yangi g'oya uchun yarim tayyor plata, qo'shimcha knopkalar ham
-yo'q emas. ![led dimmer](https://i.ibb.co/1LLCRM3/Sot-23-N-CH-3400-A09-T-30-V-5-6-A-SMD-LED-Driver-Dimmer-Transistor-Mosfet-with-Ro-HS-ISO.jpg)
+Controllerdan keyingi o'rinlarda svetodiod uchun ikkita mosfet (led dimmer) qo'yilgan ekan. Demak yangi g'oya uchun yarim tayyor plata, qo'shimcha knopkalar ham yo'q emas.
+![led dimmer](https://i.ibb.co/1LLCRM3/Sot-23-N-CH-3400-A09-T-30-V-5-6-A-SMD-LED-Driver-Dimmer-Transistor-Mosfet-with-Ro-HS-ISO.jpg)
 
 ## G'oya o'zi qanday?
 
-Platadagi controller ishlamagach uni qayta yasashga to'g'ri keladi. Albatta birgina potensiometr bilan ishni hal qilish mumkin aslida lekin bu yana mexanik
-harakatlarni yuzaga keltiradi. Kompyuter qarshisidan turib yorug'likni sozlash kimga ham yoqardi deysiz. Demak biz qayta qiladigan ishlar:
-
+Platadagi controller ishlamagach uni qayta yasashga to'g'ri keladi. Albatta birgina potensiometr bilan ishni hal qilish mumkin aslida lekin bu yana mexanik harakatlarni yuzaga keltiradi.
+Kompyuter qarshisidan turib yorug'likni sozlash kimga ham yoqardi deysiz.
+Demak biz qayta qiladigan ishlar:
 - O'chirib yoqishni ta'minlash
 - Rejimlarni almashtira olish
 - Yorqinlikni boshqarish
@@ -33,19 +31,15 @@ harakatlarni yuzaga keltiradi. Kompyuter qarshisidan turib yorug'likni sozlash k
 
 ## Yechim
 
-Velosipedni qayta ixtiro qilib o'tirish shart emas. Shu sababli ham tayyor arduino (atmega 328)dan foydalanish mumkin va bu ishni ancha osonlashtiradi ham.
-Kompyuter bilan ulash uchun plata o'zida tayor ch40 serial controller ham bor qaytaga.
+Velosipedni qayta ixtiro qilib o'tirish shart emas. Shu sababli ham tayyor arduino (atmega 328)dan foydalanish mumkin va bu ishni ancha osonlashtiradi ham. Kompyuter bilan ulash uchun plata o'zida tayor ch40 serial controller ham bor qaytaga.
 
 ## Sxematika
+Led ring platasini modlash oson masala. A09T dimmer gate uchun arduinodagi interruptlardan foydalanamiz. Bu bizga yorqinlikni boshqarish uchun yuqori signal generatsiya qilishni ta'minlab bera oladi.
+Qolgan buttonlarni esa istalgan pinlar orqali **INPUT_PULLUP** yordamida holatini boshqaramiz.
 
-Led ring platasini modlash oson masala. A09T dimmer gate uchun arduinodagi interruptlardan foydalanamiz. Bu bizga yorqinlikni boshqarish uchun yuqori signal
-generatsiya qilishni ta'minlab bera oladi. Qolgan buttonlarni esa istalgan pinlar orqali **INPUT_PULLUP** yordamida holatini boshqaramiz.
-
-_INPUT_PULLUP arduinoda tashqi resistor yordamisiz ichki resiztordan source olish imkonini beradi. Bu bilan biz button va groundlar o'rtasida kalit yasash
-orqaligina yengil chiqa olamiz._
+*INPUT_PULLUP arduinoda tashqi resistor yordamisiz ichki resiztordan source olish imkonini beradi. Bu bilan biz button va groundlar o'rtasida kalit yasash orqaligina yengil chiqa olamiz.*
 
 ## Arduino
-
 ```c
 #include <EEPROM.h>
 
@@ -119,7 +113,7 @@ void loop() {
       EEPROM.write(2, 3);
     }
     if ( val == 54 && brightness < maxBrightness && onOffState) {
-      brightness = brightness + brightnessInterval;
+      brightness = brightness + brightnessInterval; 
       EEPROM.write(3, brightness);
     }
     if ( val == 55 && brightness > 0 && onOffState ) {
@@ -134,7 +128,7 @@ void loop() {
     if (digitalRead(onOffPin) == LOW) {
       onOffState = !onOffState;
       EEPROM.write(1, onOffState);
-      buttonMillis = currentMillis;
+      buttonMillis = currentMillis; 
     }
     if (digitalRead(modePin) == LOW && onOffState) {
       switch (mode) {
@@ -149,37 +143,37 @@ void loop() {
         break;
       }
       EEPROM.write(2, mode);
-      buttonMillis = currentMillis;
+      buttonMillis = currentMillis; 
     }
     if (digitalRead(upPin) == LOW && brightness < maxBrightness && onOffState) {
       brightness = brightness + brightnessInterval;
       EEPROM.write(3, brightness);
-      buttonMillis = currentMillis;
+      buttonMillis = currentMillis; 
     }
     if (digitalRead(downPin) == LOW && brightness > 0 && onOffState ) {
       brightness = brightness - brightnessInterval;
       EEPROM.write(3, brightness);
-      buttonMillis = currentMillis;
+      buttonMillis = currentMillis; 
     }
   }
 
   // Tizimni ishga tushirish
   if(onOffState){
     if(mode == 1 || mode == 3){
-      analogWrite(ledF, map(brightness, 0, maxBrightness, 0, 255));
+      analogWrite(ledF, map(brightness, 0, maxBrightness, 0, 255));      
     }else{
       digitalWrite(ledF, LOW);
    }
     if(mode == 2 || mode == 3){
-      analogWrite(ledS, map(brightness, 0, maxBrightness, 0, 255));
+      analogWrite(ledS, map(brightness, 0, maxBrightness, 0, 255));      
     }else{
-      digitalWrite(ledS, LOW);
+      digitalWrite(ledS, LOW);  
     }
   }else{
     digitalWrite(ledF, LOW);
-    digitalWrite(ledS, LOW);
+    digitalWrite(ledS, LOW);  
   }
-
+  
   // Agarda kompyuter bilan sinxronizatsiya qilish kerak bo'lsa o'zgaruvchilarni kompyuterga yuborish
   if (currentMillis - serialMillis >= 300) {
     serialMillis = currentMillis;
@@ -238,7 +232,7 @@ def aboutprogram():
 	about_win.geometry('%dx%d+%d+%d' % (160, 100, sx, sy))
 	about_win.resizable(0, 0)
 	about_win.title("Dastur haqida")
-
+	
 	comp = tkinter.Label(about_win, text ="Yetim dasturchi\npiradakshin :)\n\nwww.manu.uno\n@yetimdasturchi")
 	comp.pack(pady = 25, side = tkinter.RIGHT)
 	comp.configure(font=("Courier", 12))

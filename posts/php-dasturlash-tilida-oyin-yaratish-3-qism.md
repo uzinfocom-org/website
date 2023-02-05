@@ -5,16 +5,11 @@ slug: php-dasturlash-tilida-oyin-yaratish-3-qism
 date: December 5, 2022
 ---
 
-Ushbu qismgacha bo'lgan postlar seriyasida foydalanuvchi tomonidan tugmachalarni bosish holatlarini aniqlash va PHP buyruq qatoridan foydalangan holda tic tac
-toe o'yinini yaratishni ko'rib chiqdik. Keyingi qadam, grafik muhitga ega va real vaqtda foydalanuvchi kiritishiga ega bo'lgan o'yinni yaratishdir.
+Ushbu qismgacha bo'lgan postlar seriyasida foydalanuvchi tomonidan tugmachalarni bosish holatlarini aniqlash va PHP buyruq qatoridan foydalangan holda tic tac toe o'yinini yaratishni ko'rib chiqdik. Keyingi qadam, grafik muhitga ega va real vaqtda foydalanuvchi kiritishiga ega bo'lgan o'yinni yaratishdir. 
 
-Bu jarayonni yanada soddaroq tushunish uchun mashhur Snake Xenzia (Ilon o'yini)ni ishlab chiqishdan foydalanamiz. O'yin bir nechta oddiy qoidalarga ega va uni
-juda oddiy grafik muhitda ham ishlab chiqish mumkin. O'yinning asosiy sharti ilonga olmalarni tanovvul qilishga yordam berib uni o'sib borishini ta'minlash.
+Bu jarayonni yanada soddaroq tushunish uchun mashhur Snake Xenzia (Ilon o'yini)ni ishlab chiqishdan foydalanamiz. O'yin bir nechta oddiy qoidalarga ega va uni juda oddiy grafik muhitda ham ishlab chiqish mumkin. O'yinning asosiy sharti ilonga olmalarni tanovvul qilishga yordam berib uni o'sib borishini ta'minlash.
 
-Tik tac toe o'yinidan farqli o'laroq, bu yerda jarayonni kuzatish uchun yana bir nechta o'zgaruvchilar mavjud. Yo'naltiruvchi o'zgaruvchilardan foydalanishdan
-tashqari ularni obyektiga inkapsulatsiya qilish ham kerak. Ilon o'yinida o'yin taxtasini katta massiv sifatida saqlash o'rniga, biz faqat olma va ilonning
-harakatini kuzatib borishimiz kerak xolos. Bu jarayonni kuzatish uchun `Snake` obtektini yasab olamiz. Ushbu obyekt bizga ilon va olma holatlarini o'zida saqlab
-borishdan tashqari ularni boshqarish imkonini ham beradi.
+Tik tac toe o'yinidan farqli o'laroq, bu yerda jarayonni kuzatish uchun yana bir nechta o'zgaruvchilar mavjud. Yo'naltiruvchi o'zgaruvchilardan foydalanishdan tashqari ularni obyektiga inkapsulatsiya qilish ham kerak. Ilon o'yinida o'yin taxtasini katta massiv sifatida saqlash o'rniga, biz faqat olma va ilonning harakatini kuzatib borishimiz kerak xolos. Bu jarayonni kuzatish uchun `Snake` obtektini yasab olamiz. Ushbu obyekt bizga ilon va olma holatlarini o'zida saqlab borishdan tashqari ularni boshqarish imkonini ham beradi.
 
 ```php
 <?php
@@ -50,7 +45,7 @@ class Snake {
       		$appleX = rand( 0, $width - 1 );
       		$appleY = rand( 0, $height - 1 );
     	}
-
+    	
     	$this->appleX = $appleX;
     	$this->appleY = $appleY;
   	}
@@ -58,13 +53,10 @@ class Snake {
 ```
 
 Snake obyektini yaratish uchun biz shunchaki o'yin taxtasining kengligi va balandligini ko'rsatishimiz lozim.
-
 ```php
 $snake = new Snake( 20, 30 ); // kenglik, balandlik
 ```
-
-Ilon o'yinini konsolda ko'rsatish uchun biz ilon obyektini qayta ishlash funksiyasidan foydalanamiz. Ushbu funksiyaning vazifasi ilonni ( X harfi bilan
-ifodalangan ), olma (0 raqami bilan ifodalangan) bilan birga harakatlanadigan o'yin taxtasini ko'rsatishdir.
+Ilon o'yinini konsolda ko'rsatish uchun biz ilon obyektini qayta ishlash funksiyasidan foydalanamiz. Ushbu funksiyaning vazifasi ilonni ( X harfi bilan ifodalangan ), olma (0 raqami bilan ifodalangan) bilan birga harakatlanadigan o'yin taxtasini ko'rsatishdir.
 
 ```php
 function renderGame( $snake ) {
@@ -84,9 +76,7 @@ function renderGame( $snake ) {
   	return $output;
 }
 ```
-
-Agar biz yaratilgan `Snake` obyektini ko'rsatsak quyidagi natijani ko'ramiz. Obyekt faqat bitta segmentga ega, shuning uchun u o'yin taxtasida bitta X sifatida
-chop etiladi. G'oya shundan iboratki, o'yinchi harakat qilganda, biz minimal daraja 5 ga yetguncha segmentlarni hosil qilishimiz kerak.
+Agar biz yaratilgan `Snake` obyektini ko'rsatsak quyidagi natijani ko'ramiz. Obyekt faqat bitta segmentga ega, shuning uchun u o'yin taxtasida bitta X sifatida chop etiladi. G'oya shundan iboratki, o'yinchi harakat qilganda, biz minimal daraja 5 ga yetguncha segmentlarni hosil qilishimiz kerak.
 
 ```
 ..............................
@@ -111,9 +101,7 @@ chop etiladi. G'oya shundan iboratki, o'yinchi harakat qilganda, biz minimal dar
 ..............................
 ```
 
-Yuqoridagi funksiya hozircha qayta ishlashdan boshqa hech narsa qilmaydi, shuning uchun biz ilonga ba'zi harakat mexanikasini qo'shishimiz kerak. Quyidagi
-funskiya ilon uchun ana shunday harakat mexanikasiga asoslanib yo'nalishni belgilab beradi.
-
+Yuqoridagi funksiya hozircha qayta ishlashdan boshqa hech narsa qilmaydi, shuning uchun biz ilonga ba'zi harakat mexanikasini qo'shishimiz kerak. Quyidagi funskiya ilon uchun ana shunday harakat mexanikasiga asoslanib yo'nalishni belgilab beradi.
 ```php
 function direction( $stdin, $snake ) {
 	$key = fgets( $stdin );
@@ -140,14 +128,9 @@ function direction( $stdin, $snake ) {
   	}
 }
 ```
+`direction` funksiyasi ilonning o'rnini o'yin taxtasi bo'ylab harakatlanayotgandek yangilash uchun ishlatiladi. Misol uchun, o'ng tomonga harakat tugmasini bosish movementY harakatini 1 ga o'rnatadi, ya'ni har bir yangilanishda ilon o'z harakatini positionY qiymati bo'yicha bittaga oshirib ketadi.
 
-`direction` funksiyasi ilonning o'rnini o'yin taxtasi bo'ylab harakatlanayotgandek yangilash uchun ishlatiladi. Misol uchun, o'ng tomonga harakat tugmasini
-bosish movementY harakatini 1 ga o'rnatadi, ya'ni har bir yangilanishda ilon o'z harakatini positionY qiymati bo'yicha bittaga oshirib ketadi.
-
-Yuqoridagi mantiqdan foydalanib, ilonni o'yin taxtasi bo'ylab siljitish uchun quyidagi `move()` funksiyasidan foydalananamiz. Ilon o'yin taxtasi chegarasidan
-o'tmasligini ta'minlagan holda ilon boshining holatini oldinga qo'shish va so'ngra ilon izi effekti hosil qilish uchun qatorning oxirgi elementni olib
-tashlashimiz kerak. Bu orqali ilon harakati effektini yaratamiz. Shuningdek, biz ilonning "boshi" olma ustida yetib kelganligini tekshirishimiz kerak va agar
-mantiq rost bo'lsa ilonning uzunligini bittaga oshirib olmani yangi joyga ko'chirish kerak.
+Yuqoridagi mantiqdan foydalanib, ilonni o'yin taxtasi bo'ylab siljitish uchun quyidagi `move()` funksiyasidan foydalananamiz. Ilon o'yin taxtasi chegarasidan o'tmasligini ta'minlagan holda ilon boshining holatini oldinga qo'shish va so'ngra ilon izi effekti hosil qilish uchun qatorning oxirgi elementni olib tashlashimiz kerak. Bu orqali ilon harakati effektini yaratamiz. Shuningdek, biz ilonning "boshi" olma ustida yetib kelganligini tekshirishimiz kerak va agar mantiq rost bo'lsa ilonning uzunligini bittaga oshirib olmani yangi joyga ko'chirish kerak.
 
 ```php
 function move( $snake ) {
@@ -175,11 +158,11 @@ function move( $snake ) {
       		// O'yin tezligini ma'lum chegaragacha oshirish
       		$snake->speed = $snake->speed - ( $snake->tail * ( $snake->width / $snake->height + 10 ) );
     	}
-
+    	
     	// Olma pozitsiyasini almashtirish.
     	$appleX = rand( 0, $snake->width - 1 );
     	$appleY = rand( 0, $snake->height - 1 );
-
+    	
     	while ( array_search( [ $appleX, $appleY ], $snake->trail ) !== FALSE ) {
       		$appleX = rand( 0, $snake->width - 1 );
       		$appleY = rand( 0, $snake->height - 1 );
@@ -190,10 +173,7 @@ function move( $snake ) {
   	}
 }
 ```
-
-O'yin jarayonida tekshirish kerak bo'lgan oxirgi narsa oxirgi kiritilgan harakat ilon o'limiga sabab bo'lganini aniqlash. Ushbu holatni aniqlash uchun bizga
-ilonning boshi o'z tanasiga tegingani holatlari kerak bo'ladi.
-
+O'yin jarayonida tekshirish kerak bo'lgan oxirgi narsa oxirgi kiritilgan harakat ilon o'limiga sabab bo'lganini aniqlash.  Ushbu holatni aniqlash uchun bizga ilonning boshi o'z tanasiga tegingani holatlari kerak bo'ladi.
 ```php
 function gameOver( $snake ) {
 	if ( $snake->tail > 5 ) {
@@ -206,7 +186,6 @@ function gameOver( $snake ) {
   	}
 }
 ```
-
 O'yin uchun kerak bo'ladigan barcha funksiyalar bizda mavjud. Faqatgina cheksiz sikl orqali o'yin jarayonini boshqarish kerak xolos.
 
 ```php
@@ -221,8 +200,7 @@ while ( 1 ) {
 }
 ```
 
-[2-qismdagi](2-qism.htm) tic ta toe o'yinidagi sikldan farqli o'laroq ilon o'yini siklida `usleep()` funskiyasi ham qo'shilgan. Ushbu funksiya harakat
-oralig'idagi pauzani begilab beradi. Ushbu funsksiyasiz ilon juda tez harakat qilib o'yinni o'ynash imkoni mavjud bo'lmay qoladi.
+[2-qismdagi](2-qism.htm) tic ta toe o'yinidagi sikldan farqli o'laroq ilon o'yini siklida `usleep()` funskiyasi ham qo'shilgan. Ushbu funksiya harakat oralig'idagi pauzani begilab beradi. Ushbu funsksiyasiz ilon juda tez harakat qilib o'yinni o'ynash imkoni mavjud bo'lmay qoladi.
 
 O'yinni ishga ishga tushirganimizda u ekranda quyidagi tartibda ko'rinadi va bemalol ilonni boshqarib ochkolar to'plashimiz mumkin bo'ladi.
 
@@ -250,5 +228,4 @@ Olmalar: 24
 ..............................
 O'yin tugadi, ilon o'ldi
 ```
-
 O'yin kodi to'liq variantda: [Github](https://gist.github.com/yetimdasturchi/b020651a4b95e4085ee6003bec16af7e)
