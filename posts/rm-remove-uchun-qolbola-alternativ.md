@@ -33,7 +33,7 @@ do
  tmpfile=$(mktemp /tmp/fake/abc-script.XXXXXXXXXXXXXXXXXXXXXXXXXX)
  dd if=/dev/urandom of=$tmpfile bs=1M count=$(expr 1 + $RANDOM % 3)
 done
-``` 
+```
 
 Keyingi navbat asosiy o'chirish mexanizmiga:
 
@@ -43,7 +43,7 @@ int main(const int argc, char *argv[]) {
         fprintf(stderr, "Papka kiritilmadi!\n");
         return -1;
     }
-    
+
     int all_files = remove_dir_contents( argv[1], false );
     printf("O'chirilgan fayllar: %d\n", all_files);
     return(0);
@@ -60,7 +60,7 @@ char *concat(const char *a, const char *b) {
     int lenb = strlen(b);
     char *con = malloc(lena+lenb+1);
     memcpy(con,a,lena);
-    memcpy(con+lena,b,lenb+1);        
+    memcpy(con+lena,b,lenb+1);
     return con;
 }
 ```
@@ -72,9 +72,9 @@ int remove_dir_contents(char* path, bool selfd){
   DIR *d;
   struct dirent *dir;
   d = opendir( path );
-  
+
   int x = 0;
-  
+
   if ( d ) {
     while ( ( dir = readdir( d ) ) != NULL) {
       if ( dir->d_name[0] == '.' || dir->d_type == DT_CHR ) {
@@ -101,17 +101,17 @@ int remove_dir_contents(char* path, bool selfd){
     }
     closedir(d);
   }
-  
+
   return x;
 }
-``` 
+```
 
 Oldimizda faylni kompiliyatsiya qilish va ishga tushirish sharti qoldi xolos.
 
 ```bash
 gcc -std=c99 -g remover.c -o remover
 // Feyk fayllarni generatsiya qilish olish
-bash fake.sh 
+bash fake.sh
 // Feyk fayllarni o'chirish
 ./remover /tmp/fake
 ```

@@ -1,6 +1,6 @@
 ---
-title: "Tashlandiq laboratoriyadagi tajribalar - yoxud Iphone siri"
-description: "Iphone qurilmasing tarixi va siz bilmagan Stiv Jobs"
+title: 'Tashlandiq laboratoriyadagi tajribalar - yoxud Iphone siri'
+description: 'Iphone qurilmasing tarixi va siz bilmagan Stiv Jobs'
 slug: tashlandiq-laboratoriyadagi-tajribalar-yoxud-iphone-siri
 date: January 24, 2023
 ---

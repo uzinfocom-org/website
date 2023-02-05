@@ -1,5 +1,5 @@
 ---
-title: "Telegram instant view nima va qanday ishlaydi?"
+title: 'Telegram instant view nima va qanday ishlaydi?'
 description: "Instant view vazifa jihatdan kontentni foydalanuvchilarga ortiqcha harakatlarsiz tezkorlik bilan yetkazishni ta'minlaydi..."
 slug: telegram-instant-view-nima-va-qanday-ishlaydi
 date: November 22, 2022
@@ -32,7 +32,8 @@ https://instantview.telegram.org/my/ sahifasiga kirganimizdan so'ng sahifaning y
 Telegram velosipedni qayta ixtiro qilib o'tirmasdan mavzularni ishlab chiqish uchun **xpath** tilidan foydalangan. Xpath bu xml hujjatlarni qayta ishlash uchun ishlab chiqilgan ifodalash tili. Ushbu til satrlar, raqamlar, mantiqiy amallar, sana va vaqtni taqqoslash, elementlarni manipulatsiya qilish kabi imkoniyatlarni bera oladi. Ozgina htmldan xabardor odam uchun unchalik ham muammo emas. Jumladan ushbu ifodalash tili bugungi kunda javascript, php, python, java, c kabi ko'plar dasturlash tillari doirasida qo'llab kelinadi. Yanada batafsil https://www.w3.org/TR/xpath/all/ havolasi orqali ma'lumot olishingiz mumkin.
 
 ### Koding
-Demak telegram biz bergan havoladan kerakli ma'lumotlarni aniqlashi uchun biz unga shartlarni berishimiz kerak. Instant view uchun asosiy kerak bo'lgan ma'lumotlar bu sarlavha, sahifa muallifi, maqola yoki boshqa bir ma'lumot kontenti hisoblanadi.  Ushbu ma'lumotlarni yetkazish uchun esa yuqorida aytilganidek xpathdan foydalanamiz. Buning oson bir yo'li mavjud. Google chrome brauzeridagi elementlarni tekshirish oynasi (Inspect elements yoki devtools). Sahifadagi kerakli element ustiga bosib kontekst menudan inspect element bosilganda dev tools bizni aynan o'sha element tahrirlash qismiga olib boradi. Element ustiga kontekt menyu ochilganda `Copy->Copy Xpath` bo'limini tanaylmiz va sahifa uchun tayyor selektor mavjud bizda.
+
+Demak telegram biz bergan havoladan kerakli ma'lumotlarni aniqlashi uchun biz unga shartlarni berishimiz kerak. Instant view uchun asosiy kerak bo'lgan ma'lumotlar bu sarlavha, sahifa muallifi, maqola yoki boshqa bir ma'lumot kontenti hisoblanadi. Ushbu ma'lumotlarni yetkazish uchun esa yuqorida aytilganidek xpathdan foydalanamiz. Buning oson bir yo'li mavjud. Google chrome brauzeridagi elementlarni tekshirish oynasi (Inspect elements yoki devtools). Sahifadagi kerakli element ustiga bosib kontekst menudan inspect element bosilganda dev tools bizni aynan o'sha element tahrirlash qismiga olib boradi. Element ustiga kontekt menyu ochilganda `Copy->Copy Xpath` bo'limini tanaylmiz va sahifa uchun tayyor selektor mavjud bizda.
 
 ![xpath](https://i.ibb.co/PMmgTjw/photo-2022-07-07-01-14-36.jpg)
 
@@ -43,18 +44,22 @@ title: /html/body/main/div/h1
 ```
 
 Maqol kontenti uchun:
+
 ```xpath
 body: //div[has-class("w")]
 ```
 
 Maqola muallifi haqida ma'lumot berish:
+
 ```
 author: "Yetim dasturchi"
 author_url: "https://t.me/yetimdasturchi"
 ```
+
 E'tibor bergan bo'lsangiz yuqoridagi misolda xpath o'rniga oddiy stringdan foydalanilgan. Agarda qaysidir elementlar mavjud bo'lmasa ularni string yoki boshqa bir datatype bilan ham to'ldirsangiz bo'ladi.
 
 ### Mavzularni yanada kengaytirish
+
 Yuqorida keltirilgan xpath orqali faqat sarlavha, muallif va kontentni belgiladik xolos. Lekin millionlab web sahifalar orasidagi elementlar uchun bo'gan shartlar doim ham yuqoridagi holatga mos kelmasligi mumkin. Ya'ni qaysidir elementni mavjudligini tekshirish yoki boshqa bir elementlarni olib tashlash kabi. Quyidagi jarayonda aynan shularni ko'rib chiqamiz.
 
 E'tibor bergan bo'lsangiz mendagi blogda (manu.uno) maqola sarlavhasi va kontenti aynan bitta `<div class"w"></div>` element ichida joylashgan. Instant view sarlavhani kontentda takrorlamasligini ta'minlash uchun xpathdagi `@remove` funsksiyasidan foydalanishimiz mumkin.
@@ -65,21 +70,26 @@ E'tibor bergan bo'lsangiz mendagi blogda (manu.uno) maqola sarlavhasi va kontent
 
 Biz `$body` uchun allaqachon div element kontentini kiritgan edik. Yuqoridagi holatda endi `$body` o'zgaruvchisi ichidan sarlavha o'zgaruvchisi (`@title`) va "orqaga" (blogda bir ortga harakatlanish) kontentida ishtirok etgan giperhavolani o'chirish kiritildi.
 
-Yoki to'g'ridan to'g'ri `xpath` (element) orqali belgilash: 
+Yoki to'g'ridan to'g'ri `xpath` (element) orqali belgilash:
+
 ```
 @remove:$body//h1[1]
 ```
+
 Hali ko'ngildagidek chiqmadimi?
 
 ![meme](https://i.ibb.co/0jzRpZ9/image-3.png)
 
 Kontentni qayta ishlagandan so'ng u uchun muqova rasmini unutdik albatta. Bu jarayondagi oson yechim birinchi uchragan rasmni muqova uchun olish hisoblanadi:
+
 ```
 cover: $@
 ```
-Mavzularni tekshirish jarayonida foydalanuvchi tomonidan  kiritilgan havolada har doim ham maqolaga tegishli kontent keltirilmasligi mumkin. Masalan izlash sahifasi yoki boshqa bir shunga o'xshash dinamik sahifalar. Ushbu jarayonda xpathdagi exists funksiyasi bizdagi muammoni hal qilib bera oladi.
+
+Mavzularni tekshirish jarayonida foydalanuvchi tomonidan kiritilgan havolada har doim ham maqolaga tegishli kontent keltirilmasligi mumkin. Masalan izlash sahifasi yoki boshqa bir shunga o'xshash dinamik sahifalar. Ushbu jarayonda xpathdagi exists funksiyasi bizdagi muammoni hal qilib bera oladi.
 
 `<div class"w"></div>` elementi mavjud bo'lsa jarayonni amalga oshirish:
+
 ```
 ?exists: //div[@class="w"]
 ```
@@ -99,6 +109,7 @@ body: //div[has-class("w")]
 @remove:$body//ul[@class="table-of-contents"]
 @remove:$body//a[@class="heading-permalink"]
 ```
+
 ### Sahifani kuzatish
 
 Mavzu to'laqonli kiritilgach tahrirlash oynasining yuqori o‘ng burchakdagi TRACK CHANGES havolasini bosing. Shundan so'ng bot mavzuni o‘zgartirgandan so‘ng paydo bo‘ladigan xatolar va o‘zgarishlar uchun ushbu sahifani kuzatib borishni boshlaydi.
@@ -106,25 +117,33 @@ Mavzu to'laqonli kiritilgach tahrirlash oynasining yuqori o‘ng burchakdagi TRA
 ### Yangi havolani ulashish
 
 Instant viewni foydalanuvchilarga yetkazish uchun quyidagi formatdagi havoladan foyalanishingiz kerak:
+
 ```
 https://t.me/iv?url={%URL%}&rhash={%RHASH%}
-``` 
+```
+
 Misol:
+
 ```
 https://t.me/iv?url=https://manu.uno/blog/deepin-linux.htm&rhash=51aed3cfea33c
 ```
+
 Instant viewda o'ndan ortiq sahifalar qo'shganingizdan so'ng, "Submit template" tugmasini bosish orqali mavzuni to'liq domen uchun e'lon qilishingiz mumkin. Telegram administratsiyasi mavzuni tasdiqlagandan so'ng foydalanuvchilar tomonidan telegramda uzatilgan sizning domeningizga qarashli har qanday havola instant view bot orqali avtomatik tekshiruvni boshlaydi.
 
 ## Instant view qanday holatlar uchun arzimaydi?
 
 Instant View mavzular yaratish faqat statik tarkibga ega sahifalar uchun foydalidir. Misol:
+
 - Blog postlar
 - Yangiliklar
 - Wiki sahifalar
 - Qo'llanmalar
 - Turli xildagi mahsulot tavsiflari
+
 ---
+
 Qanday sahifalar uchun arzimaydi:
+
 - Ruknlar sahifasi
 - Qidiruv natijalari
 - Forumlar va sharhlar

@@ -1,11 +1,11 @@
 ---
-title: "Operatsion tizim nima va u qanday ishlaydi?"
-description: "Shaxsiy kompyuterlarning operatsion tizimlari yaratilish tarixiga nazar solsak, sakkiz razryadli shaxsiy kompyuterlar..."
+title: 'Operatsion tizim nima va u qanday ishlaydi?'
+description: 'Shaxsiy kompyuterlarning operatsion tizimlari yaratilish tarixiga nazar solsak, sakkiz razryadli shaxsiy kompyuterlar...'
 slug: operatsion_tizim_nima_va_u_qanday_ishlaydi
 date: June 25, 2022
 ---
 
-Shaxsiy kompyuterlarning operatsion tizimlari yaratilish tarixiga nazar solsak, sakkiz razryadli shaxsiy kompyuterlar uchun yaratilgan birinchi operatsion tizim CP/M – 80 (Controll Programm for Microcomputers, ya’ni mikrokompyuterlar uchun boshqaruvchi dasturlar) nom bilan tanigan. Uning muallifi Digital Research kompaniyasining prezidenti Geri Kildell bo’lgan. 
+Shaxsiy kompyuterlarning operatsion tizimlari yaratilish tarixiga nazar solsak, sakkiz razryadli shaxsiy kompyuterlar uchun yaratilgan birinchi operatsion tizim CP/M – 80 (Controll Programm for Microcomputers, ya’ni mikrokompyuterlar uchun boshqaruvchi dasturlar) nom bilan tanigan. Uning muallifi Digital Research kompaniyasining prezidenti Geri Kildell bo’lgan.
 
 16 razryadli yangi kompyuterlar yaratish g’oyasini dasturlar yaratuvchi Microsoft (Maykrosoft) kompaniyasining asoschisi va prezidenti, multimilliarder Bill Geyts ilgari surgan, u IBM firmasi bilan hamkorlikda ishlashga rozi bo’ladi.
 
@@ -21,11 +21,11 @@ Operatsion tizim funksiyalari
 
 Agar “operatsion tizim” (OS) tushunchasini qisqacha izohlasak, bu boshqaruv dasturidir. OS bu – kompyuterning fizik va dasturiy resurslarini taqsimlash va ularni boshqarish uchun ishlatiladigan dastur.
 
-Kompyuter resurslari ikki xil: fizik va dasturiy resurslarga bo’linadi. 
+Kompyuter resurslari ikki xil: fizik va dasturiy resurslarga bo’linadi.
 
 Fizik resurslar bu :
 
-Dasturlash tizimi – dasturlash tillari va ularga mos til protsessorlari majmuasidan iborat bo’lib, dasturlarga ishlov berish va so’zlashni ta’minlovchi dasturlar to’plamidan iborat. Dasturlash tizimining tashkil qiluvchilar (dasturlar) amaliy dasturlar to’plami singari OS boshqaruvi ostida ishlaydi. Kompyuter resurslari OS boshqaruvi ostida bo’ladi. OS ga ehtiyoj resurslar taqsimoti va ularni boshqarish masalasi zaruriyatidan kelib chiqadi. Resurslarni boshqarishdan maqsad foydalanuvchiga kompyuterdan effektiv foydalanish bilan birga resurslarni boshqarish tashvishidan ozod qilishdir. 
+Dasturlash tizimi – dasturlash tillari va ularga mos til protsessorlari majmuasidan iborat bo’lib, dasturlarga ishlov berish va so’zlashni ta’minlovchi dasturlar to’plamidan iborat. Dasturlash tizimining tashkil qiluvchilar (dasturlar) amaliy dasturlar to’plami singari OS boshqaruvi ostida ishlaydi. Kompyuter resurslari OS boshqaruvi ostida bo’ladi. OS ga ehtiyoj resurslar taqsimoti va ularni boshqarish masalasi zaruriyatidan kelib chiqadi. Resurslarni boshqarishdan maqsad foydalanuvchiga kompyuterdan effektiv foydalanish bilan birga resurslarni boshqarish tashvishidan ozod qilishdir.
 
 OS lardan quyidagi xususiyatlarga ega bo’lishi talab qilinadi:
 
@@ -37,7 +37,7 @@ OS lardan quyidagi xususiyatlarga ega bo’lishi talab qilinadi:
 
 4\. Qulaylik. Foydalanuvchiga OS ni taklif qilishdan maqsad – resurslarni aniqlash va bu resurslarni boshqarish masalalarini yechishdan ozod qilishdir. Tizimni inson psixologiyasini hisobga olgan holda loyihalash kerak.
 
-5\. Effektivlik. Resurslar taqsimotida OS foydalanuvchi uchun maksimal holda tizim resurslaridan foydalanish darajasini ishirish kerak. Tizimning o’zi esa iloji boricha kamroq resurlardan foydalanishi kerak. Resurslarning OS tomonidan band qilinishi foydalanuvchi imkoniyatlarini kamaytirishga olib keladi. 
+5\. Effektivlik. Resurslar taqsimotida OS foydalanuvchi uchun maksimal holda tizim resurslaridan foydalanish darajasini ishirish kerak. Tizimning o’zi esa iloji boricha kamroq resurlardan foydalanishi kerak. Resurslarning OS tomonidan band qilinishi foydalanuvchi imkoniyatlarini kamaytirishga olib keladi.
 
 6\. Moslanuvchanlik. Tizim amallari foydalanuvchiga qarab sozlanishi mumkin. Resurslar majmuasi OS effektivligi va samaradorligini oshirish maqsadida ko’paytirilishi yoki kamaytirilishi mumkin.
 
@@ -49,7 +49,7 @@ Avval qayd etganimizdek, OS ning asosiy vazifasi bu –resurslar taqsimoti va bo
 
 Bir dasturli rejim – kompyuterning barcha resurslari faqat bir dasturga xizmat qiladi.
 
-Ko’p dasturli rejim (multidastur) – OS bir vaqtning o’zida bir – biriga bog’liq bo’lmagan bir necha dasturlarga xizmat qiladi. Bunda resurslar dasturlar o’rtasida o’zaro taqsimlanadi. “multidastur” rejimi markaziy protsessor ish vaqti bilan “periferiya” qurilmalari ishini ta’minlashdan iborat. Bu usulning bir dasturli rejimidan afzalligi resurslardan effektiv foydalanish va berilgan masala yechilishini tezlatishdir. 
+Ko’p dasturli rejim (multidastur) – OS bir vaqtning o’zida bir – biriga bog’liq bo’lmagan bir necha dasturlarga xizmat qiladi. Bunda resurslar dasturlar o’rtasida o’zaro taqsimlanadi. “multidastur” rejimi markaziy protsessor ish vaqti bilan “periferiya” qurilmalari ishini ta’minlashdan iborat. Bu usulning bir dasturli rejimidan afzalligi resurslardan effektiv foydalanish va berilgan masala yechilishini tezlatishdir.
 
 Ko’p masalali rejim – “multimasala” rejimda bir vaqtning o’zida bir necha masalaning parallel ishlashini ta’minlash ko’zda tutilgan. Bunda bir masalaning natijasi ikkinchi masala uchun berilganlar majmuasinin tashkil qilishi ham mumkin. OS yechilayotgan masalalarni bir – biri bilan bog’liqligini rejalashtiradi va nazorat qilib boradi. “ko’p dasturli” rejimdan (dasturlar orasida vaqtni taqsimlash prinspi) farqli, bu yerda barcha masalalar bo’yicha parallel ishlash ko’zda tutilgan. Ko’p masalali rejim faqat multisistemada (bir necha protsessor) tashkil qilinadi.
 
@@ -59,7 +59,7 @@ OS kompyuter va foydalanuvchi o’rtasida vosita hisoblanadi. OS foydalanuvchi s
 
 • Vaqtni taqsimlash sistemasi;
 
-“paket” rejimi – bu masalalar majmuasiga ishlov beruvchi sistema ya’ni bir yoki bir necha foydalanuvchi tomonidan tayyorlangan topshiriqlarni bajaruvchi sistema. Masalalar majmuasi kompyuterga kiritilgandan so’ng foydalanuvchi bilan uning masalasi o’rtasida muloqot qilish ta’qiqlangan. Bunday OS bir dasturli yoki ko’p dasturli rejimlarda ishlashi mumkin. 
+“paket” rejimi – bu masalalar majmuasiga ishlov beruvchi sistema ya’ni bir yoki bir necha foydalanuvchi tomonidan tayyorlangan topshiriqlarni bajaruvchi sistema. Masalalar majmuasi kompyuterga kiritilgandan so’ng foydalanuvchi bilan uning masalasi o’rtasida muloqot qilish ta’qiqlangan. Bunday OS bir dasturli yoki ko’p dasturli rejimlarda ishlashi mumkin.
 
 Vaqtni taqsimlash – bir vaqtning o’zida bir necha foydalanuvchiga xizmat qilish mumkin va foydalanuvchiga o’z masalasi bilan muloqot qilish imkonini beradi. Bir vaqtda ishlash effektiga, protsessor vaqti va boshqa resurslarni turli foydalanuvchilar tomonidan berilgan hisoblash jarayonlariga taqsimlash bilan erishiladi. OS kompyuterga kiritilayotgan topshiriqlar uchun navbat tashkil qiladi va har biriga navbat asosida protsessordan foydalanish vaqtini aniqlaydi. Birinchi topshiriqni bajargandan so’ng OS uni navbatning oxiriga olib borib qo’yadi va ikkinchi masalaga xizmat qiladi va x.k. har bir masalaga xizmat qilish vaqti parametrlarida aniqlanadi. Professional dasturchi tashkil qilish jarayonida bu vaqt birligini o’zgartirishi mumkin.
 
@@ -85,7 +85,7 @@ Tizimda bajariluvchi dastur jarayonni tashkil qiladi. Jarayon – bu holatlarnin
 
 Ritchi va Tompson (1978) terminologiyasiga asosan dastur bajariladigan muhit, holat (obraz) deyiladi. Holat tarkibiga dastur va unga bog’liq bo’lgan berilganlar, ochiq fayllar holati va joriy mundarija kiradi. Holat atributiga foydalanuvchi tomonidan kiritilgan ayrim identifikatorlar foydalanuvchi uchun ochiq deb hisoblanadi. Jarayonni bunday tashkil qilinishi foydalanuvchiga qo’shimcha ma’lumot berish va jarayonga aralashish imkoniyatini beradi. Shuni aytish kerakki, barcha jarayonlar uchun ham foydalanuvchi atributi mavjud emas. Bunday holat jarayon yaratgan jarayonlarda vujudga keladi. Bunday jarayonlarga foydalanuvchi aralashuvi maxsus sistemali buyruqlar asosida amalga oshirilishi mumkin. Sistemada jarayonga ko’makchi jarayonlar mavjud bo’ladi.
 
-Sistemadagi ko’pgina jarayonlar kutish holatiga o’tishi berilganlarni kiritish va chiqarish yoki biron – bir sistemali funksiyani bajarilishini kutish bilan bog’liq bo’ladi. Har bir real sistemada bir vaqtda mavjud bo’lgan jarayonlar chegaralangan. Bu holat ko’proq kompyuterning real fizik imkoniyatlaridan kelib chiqadi. 
+Sistemadagi ko’pgina jarayonlar kutish holatiga o’tishi berilganlarni kiritish va chiqarish yoki biron – bir sistemali funksiyani bajarilishini kutish bilan bog’liq bo’ladi. Har bir real sistemada bir vaqtda mavjud bo’lgan jarayonlar chegaralangan. Bu holat ko’proq kompyuterning real fizik imkoniyatlaridan kelib chiqadi.
 
 Berilganlar segmentiga foydalanuvchi berilganlarni kiritishi mumkin va bu segment boshqa foydalanuvchilardan himoyalangan. Foydalanuvchi bu orqali dasturiy usul bilan kengaytirishi yoki qisqartirishi mumkin. Berilganlar sigmenti hajmi OS da qabul qilingan oraliq bilan aniqlanadi yoki real foydalanuvchi ehtiyojiga qarab tashkil qilinadi. Xotira chegaralanganligi sababli, OS dan foydalanuvchi ehtiyojini to’liq qondira olmasiligi ham mumkin.
 
@@ -93,7 +93,7 @@ II Bo’linmas stek segmenti xotiraning bosh chegarasidan boshlanib pastga qarab
 
 Jarayonni boshqarish (o’zgaruvchi, ishga tayyor, ishlovchi va blokirovka qilingan holatlar). Jarayon turli holatda bo’lishi mumkin. Holatni aniqlash OS dasturlari yoki foydalanuvchi tomonidan (ayrim hollarda) boshqarishi ko’zda tutilgan.
 
-O’zgaruvchi holat. Biron – bir ish bajarilishi natijasiga ko’ra hosil bo’ladigan holat. Holatni turlicha bo’lishi muhitga va realishlovchi dasturga bog’liq bo’ladi. Masalan, ma’lumotlarning turli holatda turlicha taqsimoti bevosita jarayonni boshqarishga o’z ta’sirini o’tkazadi. 
+O’zgaruvchi holat. Biron – bir ish bajarilishi natijasiga ko’ra hosil bo’ladigan holat. Holatni turlicha bo’lishi muhitga va realishlovchi dasturga bog’liq bo’ladi. Masalan, ma’lumotlarning turli holatda turlicha taqsimoti bevosita jarayonni boshqarishga o’z ta’sirini o’tkazadi.
 
 Ishga tayyor holat. Bu holda qaralayotgan dastur uchun kerak bo’lgan fizik hamda dasturiy resurslar ishga tayyor holda turadi va qaralayotgan dastur faqat buyruqni kutadi.
 
@@ -107,7 +107,7 @@ Yordamchi qurilmalar. Aksariyat qurilmalar bilan har bir oniy vaqtda faqat bitta
 
 Matematik ta’minot resurslari – berilganlar va dastur bajarilishini nazorat qiluvchi, foydalanuvchidan himoyalanmagan funksiyalar majmuasidan iborat. Bu resurslar orasida sistema rejalashtirish, sistema kutubxonalari, fayllarni boshqarish va kiritish – chiqarishga xizmat qiluvchi servis (xizmat ko’rsatuvchi) dasturlar mavjud.
 
-Kiritish va chiqarish – bu kiritilayotgan va chiqarilayotgan berilganlarni ko’chirish jarayonidir. Berilganlarni boshqarish dasturlar orqali amalga oshiriladi. Bular kiritish va chiqarish, filtr va komunikatsiya dasturlaridir. Bu dasturlar yordamida foydalanuvchi berilganlarni uzatishda o’z yo’nalishini tashkil qilishi mumkin. Berilganlarni majmuasini ixtiyoriy qurilma va xotiraning ixtiyoriy adresiga yo’naltirishi mumkin. Filtrdan foydalanib berilganlarni tartiblash va so’ngra chiqarish oqimiga yo’naltirish mumkin. 
+Kiritish va chiqarish – bu kiritilayotgan va chiqarilayotgan berilganlarni ko’chirish jarayonidir. Berilganlarni boshqarish dasturlar orqali amalga oshiriladi. Bular kiritish va chiqarish, filtr va komunikatsiya dasturlaridir. Bu dasturlar yordamida foydalanuvchi berilganlarni uzatishda o’z yo’nalishini tashkil qilishi mumkin. Berilganlarni majmuasini ixtiyoriy qurilma va xotiraning ixtiyoriy adresiga yo’naltirishi mumkin. Filtrdan foydalanib berilganlarni tartiblash va so’ngra chiqarish oqimiga yo’naltirish mumkin.
 
 Kiritish va chiqarish standart qurilmalari. Odatda berilganlarni kiritish uchun klaviaturadan foydalaniladi. Ma’lum amallar ketma-ketligi bajarilgandan so’ng ma’lumotlar majmuasi monitorga chiqariladi. Shu sababli klaviatura kiritish standart qurilmasi, monitor esa chiqarish standart qurilmasi deb xisoblanadi. OSda nostandart bo’lmagan qurilmalarni kiritish – chiqarish qurilmasi deb e’lon qiluvchi yo’naluvchi funksiyalar mavjud. Bunday qurilmalar “beriferiya” kiritish – chiqarish qurilmalari deyiladi, chunki ular real kompyuterga nisbatan qabul qilingan deb hisoblanadi.
 
@@ -117,7 +117,7 @@ Filtr – sistemali dastur yoki buyruq bo’lib, berilganlarni kiritish qurilmas
 
 Kommunikatsiya – bu ikki sistemali dasturni, buyruqni, dastur va buyruqni yoki buyruq va dasturni birlashtirish. Bunday ko’rinishdagi birlashtirish bir dastur yoki buyruqning natijasini boshqa dastur yoki buyruqqa kiritish imkoniyatini beradi. Yo’naltirilgan kiritish-chiqarish bilan kommunikatsiya farqi: yo’naltirilgan kiritish – chiqarish bilan kommunikatsiya farqi: yo’naltirilgan kiritish – chiqarish bu – berilganlarni o’qish yoki ularni “periferiya” qurilmasiga uzatishdir. Kommunikatsiya esa-bu sistema dasturi va buyruqlari orasidagi o’zaro berilganlarni almashishdir, ya’ni berilganlarni uzatish OS ichida amalga oshiriladi.
 
-Operatsion tizimning qo'shimcha funksiyalari. Berilganlarga ishlov berish. Berilganlar kompyuter xotirasida turli ko’rinishda saqlanadi. Bular avvaldan kelishilgan holda bo’ladi. Masalan, dastur saqlanish prinsipi bilan berilganlarni saqlanishi turlichia bo’ladi, biron-bir matn muharriri yordamida xosil qilingan ma’lumot boshqa muharrir yordamida hosil qilingan ma’lumotlarning ichki ko’rinishidan farq qiladi. Har bir malumotning ichki tuzilish avvaldan tanlabolingan kodlash usuli yordamida xosil qilinadi. Kodlar turlari va kodlash usulari turlicha. Ularni qanday ko’rinishda tanlab olish va ishlatish bevosita tizim ijodkorlariga bog’liq. Odatda, biron-bir kodlash usuli ma’lum bir turdagi kompyuter (dasturiy ta’minot bilan birga) uchun tanlab olinadi va bu turdagi kompyuter takomillashsa, kodlash usulini saqlab qolishga harakat qilinadi. Bundan shunday xulosa qilishimiz mumkin, OS tarkibidagi berilganlarga ishlov beruvchi dastur berilgan dastur berilganlar tuzilishini aniqlab dastur, arifmetik konstanta, berilganlar majmuasi (matn) va h.k. kerakli usulda tahlil qilib, ko’zda tutilgan ishni bajaradi. 
+Operatsion tizimning qo'shimcha funksiyalari. Berilganlarga ishlov berish. Berilganlar kompyuter xotirasida turli ko’rinishda saqlanadi. Bular avvaldan kelishilgan holda bo’ladi. Masalan, dastur saqlanish prinsipi bilan berilganlarni saqlanishi turlichia bo’ladi, biron-bir matn muharriri yordamida xosil qilingan ma’lumot boshqa muharrir yordamida hosil qilingan ma’lumotlarning ichki ko’rinishidan farq qiladi. Har bir malumotning ichki tuzilish avvaldan tanlabolingan kodlash usuli yordamida xosil qilinadi. Kodlar turlari va kodlash usulari turlicha. Ularni qanday ko’rinishda tanlab olish va ishlatish bevosita tizim ijodkorlariga bog’liq. Odatda, biron-bir kodlash usuli ma’lum bir turdagi kompyuter (dasturiy ta’minot bilan birga) uchun tanlab olinadi va bu turdagi kompyuter takomillashsa, kodlash usulini saqlab qolishga harakat qilinadi. Bundan shunday xulosa qilishimiz mumkin, OS tarkibidagi berilganlarga ishlov beruvchi dastur berilgan dastur berilganlar tuzilishini aniqlab dastur, arifmetik konstanta, berilganlar majmuasi (matn) va h.k. kerakli usulda tahlil qilib, ko’zda tutilgan ishni bajaradi.
 
 Virtual xotirani boshqarish. OS tarkibiga virtual (faraziy) xotiraga ishlov beruvchi dastur kiritiladi. Virtual xotira – bu taxmin (tasavvur) qilinadigan xotira. Virtual xotira hajmi real fizik xotira hajmidan ko’p bo’ladi. Bunday usulni tanlab olish sabablari, birinchidan, xotiraninig har bir manzilini tanlash manzilini tanlash bo’lsa, ikkinchidan, real operativ xotiraning tannarxi birmuncha qimmatligidadir. Shuni eslatib o’tish kerakki, albatta protsessor virtual xotirag ishlov berishda real fizik xotiraga ishlov berishga nisbatan ko’proq vaqt sarflaydi. Virtual xotira varaqma-varaq tashkil qilinadi. Har bir varaqda aniqlangan xotiraning malumot birligi uchun o’z manzili mavjud bo’ladi. Bu manzillar ketma-ketligi ularning ko’rinishi va yozilishi har bir varaq uchun bir xil bo’ladi. Virtual xotiraning real adresi xisoblanganda varaqdagi manzil qiymatiga varaq koeffitsienti qo’shiladi. Shu sababli manzillar chalkashiligi oldi olinadi. Ya’ni agar biz bir necha nomdagi ko’chani qarasak, har bir ko’chada 13-uy mavjud bo’lsa, harbir 13-uy manzili turli bo’ladi, chunki ko’chalar nomi turli.
 

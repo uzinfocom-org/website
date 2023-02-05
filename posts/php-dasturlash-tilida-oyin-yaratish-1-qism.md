@@ -5,11 +5,11 @@ slug: php-dasturlash-tilida-oyin-yaratish-1-qism
 date: December 3, 2022
 ---
 
-Yaqinda youtubeda eski kompyuterlar haqidagi hujjatli filmni ko'rayotganimda buyruq satri (cli) yordamida yaratilgan o'yinlar e'tiborimni tortdi. Bu matn asosida ishlaydigan yoki savollar berib boradigan emas balkim real vaqtda foydalanuvchi buyruqlarini takrorlovchi o'yin edi. 
+Yaqinda youtubeda eski kompyuterlar haqidagi hujjatli filmni ko'rayotganimda buyruq satri (cli) yordamida yaratilgan o'yinlar e'tiborimni tortdi. Bu matn asosida ishlaydigan yoki savollar berib boradigan emas balkim real vaqtda foydalanuvchi buyruqlarini takrorlovchi o'yin edi.
 
 Demakki o'ttiz yoshli kompyuterda mumkin bo'lsa, unda PHP tili ham bunday ishni eplay olishi aniq!
 
-Ko'pchilik vazifaning og'riqli deb biladigan nuqtasi real vaqt rejimida buyruq satrida klaviaturadan kirishni qanday aniqlashni hal qilishdir. PHP dasturlash tilida php://stdin kiritish oqimi mavjud.  Ushbu oqim va `fgets()` funksiyasi yordamida biz bemalol foydalanuvchidan kelayotgan kiritish hodisalarini aniqlay olamiz.
+Ko'pchilik vazifaning og'riqli deb biladigan nuqtasi real vaqt rejimida buyruq satrida klaviaturadan kirishni qanday aniqlashni hal qilishdir. PHP dasturlash tilida php://stdin kiritish oqimi mavjud. Ushbu oqim va `fgets()` funksiyasi yordamida biz bemalol foydalanuvchidan kelayotgan kiritish hodisalarini aniqlay olamiz.
 
 ```php
 // input.php fayli
@@ -22,7 +22,7 @@ system( 'stty cbreak -echo' ); // strdan alohida belgilarni o'qishni belgilash
 /***	Satrga kiritilgan maxsus belgilarni o'girib olish	***/
 
 function translateKeypress( $string ) {
-  	
+
   	switch ($string) {
   		// Yuqoriga harakatlantirish tugmasi
     	case "\033[A":
@@ -60,13 +60,14 @@ function translateKeypress( $string ) {
 // hodisalarni doimiy kuzatish uchun cheksiz sikl
 while ( 1 ) {
 	$keypress = fgets( $stdin ); // o'qimni o'qish
-  	
+
   	// oqimda ma'lumot mavjud bo'lsa maxsus belgilarni o'girish orqali yangi qatorga chop etish
   	if ( $keypress ) {
     	echo translateKeypress( $keypress ) . " -> tugmasi bosildi" . PHP_EOL;
   	}
 }
 ```
+
 Yuqoridagi koddan ko'radigan bo'lsak, kod biz buyrular qatoriga kiritgan har bir kiritish hodisasini o'qib aynan qaysi tugma bosilganini yangi qatorga chop etadi.
 
 ```bash
@@ -90,4 +91,4 @@ ESC -> tugmasi bosildi
 ESC -> tugmasi bosildi
 ```
 
-Demak bizda o'yinni boshqarish uchun muhim qismlardan biri bo'lgan tugmalardan hodisalarni qabul qiluvchi qism tayyor. 
+Demak bizda o'yinni boshqarish uchun muhim qismlardan biri bo'lgan tugmalardan hodisalarni qabul qiluvchi qism tayyor.

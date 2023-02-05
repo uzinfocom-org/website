@@ -1,6 +1,6 @@
 ---
 title: "Nokia - Ajdarning o'limi"
-description: "Tarixdagi eng kuchli kompaniyaning achinarli tarixi haqida"
+description: 'Tarixdagi eng kuchli kompaniyaning achinarli tarixi haqida'
 slug: nokia-ajdarning-olimi
 date: January 21, 2023
 ---

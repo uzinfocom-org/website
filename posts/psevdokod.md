@@ -23,7 +23,7 @@ Eng yoqimli narsa, psevdokod hech qanday dasturlash tiliga bog'liq emas. Siz yoz
 
 Psevdokodning unchalik aniq bo'lmagan xususiyatlaridan biri bu boshqa odamlar bilan bo'lishish qobiliyatidir. Ba'zan sizning qo'lingizda ko'plab mantiqiy loyihalarda ishlatilishi mumkin bo'lgan aniq bir mantiq bor, ammo bu loyihalarning barchasi turli tillarda yozilgan. Psevdokod tufayli siz ushbu mantiqni boshqa dasturchilar bilan baham ko'rishingiz mumkin va ular allaqachon o'zlari xohlagan tilda amalga oshiradilar.
 
-Psevdokodning yana bir ajoyib xususiyati shundaki, uni istalgan formatda yozishingiz mumkin. Akademik formatdan foydalanish mumkin. Bu nihoyatda tizimli va batafsil, lekin juda ko'p matematikani o'z ichiga oladi. Shu bilan bir qatorda, siz o'zingizning kodingizdan nimani kutayotganingizning qisqacha konturini yozishingiz mumkin. 
+Psevdokodning yana bir ajoyib xususiyati shundaki, uni istalgan formatda yozishingiz mumkin. Akademik formatdan foydalanish mumkin. Bu nihoyatda tizimli va batafsil, lekin juda ko'p matematikani o'z ichiga oladi. Shu bilan bir qatorda, siz o'zingizning kodingizdan nimani kutayotganingizning qisqacha konturini yozishingiz mumkin.
 
 #### Psevdokodni qanday yozish kerak?
 
@@ -47,9 +47,9 @@ Haddan tashqari chuqur texnik ma'lumot kerak emas, lekin siz qanchalik batafsil 
 
 #### Psevdokod yozishda e'tibor berish kerak bo'lgan asosiy fikrlar:
 
-*   dasturni bajarish mantig'i,
-*   dasturingizning murakkab qismlari tafsilotlari,
-*   izchil formatlash.
+- dasturni bajarish mantig'i,
+- dasturingizning murakkab qismlari tafsilotlari,
+- izchil formatlash.
 
 Aslida psevdokod yozish unchalik qiyin emas. Yozish paytida siz tafsilotlarni qayerga qo'shishni va qayerdan olib ketishni bilishni boshlaysiz. Ushbu "eskiz" birinchi navbatda sizning shaxsiy ehtiyojlaringiz uchun ekanligini unutmang, shuning uchun uni xohlagancha yozing.
 

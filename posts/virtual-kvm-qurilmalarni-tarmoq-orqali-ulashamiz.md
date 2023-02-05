@@ -1,6 +1,6 @@
 ---
-title: "Virtual KVM (Qurilmalarni tarmoq orqali ulashamiz)"
-description: "Bir nechta kompyuterni birgina sichqoncha va klaviatura orqali boshqaramiz"
+title: 'Virtual KVM (Qurilmalarni tarmoq orqali ulashamiz)'
+description: 'Bir nechta kompyuterni birgina sichqoncha va klaviatura orqali boshqaramiz'
 slug: virtual-kvm-qurilmalarni-tarmoq-orqali-ulashamiz
 date: January 15, 2023
 ---
@@ -26,13 +26,17 @@ Demak ishni dasturni o'rnatishdan boshlasak:
 **Windows:** [https://github.com/debauchee/barrier/releases/download/v2.4.0/BarrierSetup-2.4.0-release.exe](https://github.com/debauchee/barrier/releases/download/v2.4.0/BarrierSetup-2.4.0-release.exe)
 
 **Linux debian/ubuntu(22.04):**
+
 ```bash
 sudo apt install barrier
 ```
+
 **Linux arch:**
+
 ```bash
 sudo pacman -S barrier
 ```
+
 **Linux fedora**
 
 ```bash
@@ -40,6 +44,7 @@ sudo dnf install barrier
 ```
 
 **Linux source code orqali o'rnatish:**
+
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install git cmake make xorg-dev g++ libcurl4-openssl-dev libavahi-compat-libdnssd-dev libssl-dev libx11-dev libqt4-dev qtbase5-dev
@@ -58,8 +63,8 @@ Dasturni sozlash sizga unchalik ham muammo tug'dirmaydi. Buning uchun dasturning
 
 Dastur ish vazifasiga ko'ra ikki turdagi rejimni o'z ichiga olgan.
 
--   Server - Asosiy sizdagi klaviatura va sichqonchani ulashuvchi qurilma
--   Client - Siz qo'shimcha boshqarishni xohlaydigan qurilma
+- Server - Asosiy sizdagi klaviatura va sichqonchani ulashuvchi qurilma
+- Client - Siz qo'shimcha boshqarishni xohlaydigan qurilma
 
 Agarda dastur server sifatida belgilansa qurilma o'zida **24800** porti asosida virtual server yaratadi. So'ng boshqa qurilmalar ushbu port va server ip manzili orqali ulanishlari mumkin bo'ladi.
 
