@@ -64,7 +64,7 @@ Fred Bruks
 
 <br />
 
-> Ctrl+C, Ctrl+Vlar Batman va Robinga qaraganda ko'proq hayotni saqlab qolishgan
+> `Ctrl+C`, `Ctrl+V`lar Batman va Robinga qaraganda ko'proq hayotni saqlab qolishgan
 
 Kimdir
 
