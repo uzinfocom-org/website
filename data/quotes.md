@@ -1,25 +1,24 @@
-> Ironically, modernization initiated degradation. We came back to stone age, through the modern way.
+> Yigirma yildan keyin uchta qilgan va uchta qilmagan ishingiz uchun afsus chekasiz. Yaxshisi tinch, xotirjam hayotdan voz keching. Orzu qiling kashf qiling.
 
-[Reacting to Social Media](https://t.me/uwublog/636), UwUssimo Robinson
-
-<br />
-
-> Not every people can have continuous enthusiasm to push themselves to reach infinity, they just get a temporary thrust which will eventually stop at somewhere
-
-[The Royal Maids Experiment](https://t.me/uwublog/695), UwUssimo Robinson
+Mark Twen
 
 <br />
 
-> In our IT sphere, you either become useless theorititian IT enterprenour or practicing minimalist useful programmer. If you're unlucky enough, you might
-> become slave coding job quitter who will burn out on half way!
+> Har qanday axmoq kompyuter tushunadigan kod yozishi mumkin. Yaxshi dasturchilar esa odamlar tushunadigan kod yozadilar.
 
-UwUssimo Robinson
+Martin Fauler
 
 <br />
 
-> The saddest thing is not when the child is afraid of the dark, it is when the adult is afraid of light
+> Dasturchi malakasi oshgani sayin uning dasturidan foydalanuvchilar nodonlashib boraveradi...
 
-[Past Lives](https://www.youtube.com/watch?v=-TXtyYZIiWc), UwUssimo Robinson
+Kimdir
+
+<br />
+
+> Haqiqiy dasturchi "Pul" so'zini eshitganda boylikni emas, 3 baytli matn literalini ko'z oldiga keltiradi...
+
+Loyiha rahbari
 
 <br />
 
@@ -29,83 +28,44 @@ UwUssimo Robinson
 
 <br />
 
-> The sea is everything. It covers seven-tenths of the terrestrial globe. Its breath is pure and life-giving. It is an immense desert place where man is never
-> lonely, for he senses the weaving of Creation on every hand. It is the physical embodiment of a supernatural existence... For the sea is itself nothing but
-> **love and emotion**.
+> Dasturlash dastur tuzish orqali o'rganiladi
 
-[Twenty Thousand Leagues Under the Sea](https://www.amazon.com/000-Leagues-Under-Wordsworth-Classics/dp/1853260312), Jules Verne
+Brayan Kernigan
 
 <br />
 
-> Solitude is also the key to true loving in our relationships. When we have a part of ourselves that is firm, confident, and alone, we don't need another
-> person to fill us. We know that we have private spaces full of goodness and self-worth, and we grant those we love the same. We do not try to pry into every
-> corner of their lives or to fill the emptiness inside us with their presence.
->
-> People who don't know solitude never understand this. They are obsessed with the loneliness in their lives. They make unrealistic demands on those they love
-> because they look to them to fill this loneliness. In the name of Love they smother those around them with their needs and expectations. They demand total
-> absorption as part of a relationship, and they fear the freedom of those to whom they try to give their love.
->
-> In fact, what they want is for the people they love to conform to the shape of their own emptiness. The spaces in their lives, which should be rich, private
-> sanctuaries, are really nothing more than vast longings waiting to be filled.
+> Bizning birinchi kompyuterlarimiz ochko'zlik yoki nafsdan emas, balki oddiy odamlarga eng kuchli institutlardan ustun turishga yordam berishning inqilobiy ruhida tug'ilgan.
 
-[_Letters to My Son: A Father's Wisdom on Manhood, Women, Life and Love_](https://www.amazon.com/Letters-My-Son-Fathers-Manhood/dp/188003249X), Ken Nerburn
+Stiv Vozniak
 
 <br />
 
-> You only get one shot at life, which is scary. But it sets you free. If our life is all we get to experience, then it's the only thing that matters. If the
-> universe has no purpose, then we get to dictate what that purpose is.
+Copy va Paste dasturchilar tomonidan dasturchilar uchun dasturlashtirilgan.
 
-[_Optimistic Nihilism_](https://www.youtube.com/watch?v=MBRqu0YOH14), Kurzgesagt
-
-<br />
-
-> No policing algorithm will ever be programmed, even if it could be, toward leniency or forgiveness.
-
-[_Permanent Record_](https://www.amazon.com/Permanent-Record-Edward-Snowden/dp/1250237238), Edward Snowden
+Elye
 
 <br />
 
-> Instead of pushing all your tests for success way off to the indefinite future, see if you can pass a very small one right now.
+> Bitta dasturchi bir oyda bajaradigan ishni, ikkita dasturchi ikki oyda bajaradi.
 
-[_Confront Reality_](http://www.aaronsw.com/weblog/anders), Aaron Swartz
-
-<br />
-
-> Everybody has wished for an afterlife at times. But that has no more importance than wishing to be rich, or to swim very fast, or to have a better-shaped
-> mouth. It was in the same order of things.
-
-[_The Stranger_](https://www.amazon.com/Stranger-Albert-Camus/dp/0679720200), Albert Camus
+Fred Bruks
 
 <br />
 
-> I like being alone. I have control over my own space. Therefore, in order to win me over, your presence has to be better than my solitude. You're not
-> competing with another person, you're competing with my comfort zone.
+> Ctrl+C, Ctrl+Vlar Batman va Robinga qaraganda ko'proq hayotni saqlab qolishgan
 
-Horacio Jones
-
-<br />
-
-> When we encounter pain, we are at an important juncture in our decision-making process.
-
-[_Principles_](https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021), Ray Dalio
+Kimdir
 
 <br />
 
-> Fixed-mindset people feel smart when they don’t make mistakes, growth-mindset people feel smart when they struggle with something for a long time and then
-> finally figure it out.
+> Hayotdagi eng muhim ikkita kun bor, biri sen tug‘ilgan kun, ikkinchisi nima uchun tug‘ilganingni anglagan kun
 
-[_Believe You Can Change_](http://www.aaronsw.com/weblog/dweck), Aaron Swartz
-
-<br />
-
-> Trying to persuade other people to be interested in what you’re interested in is a fool’s game.
-
-[_Take a step back_](http://www.aaronsw.com/weblog/stepback), Aaron Swartz
+Mark Tven
 
 <br />
 
-> Giving: Can you do these things with kindness and clarity rather than with self-righteousness?
+> Gap dasturlash tilida emas, shu dasturlash tilini qanchalik yaxshi bilishda.
 
-Unknown
+Aniqlanmagan
 
 <br />
