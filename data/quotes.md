@@ -10,6 +10,18 @@ Martin Fauler
 
 <br />
 
+> Hammada dasturchilarda ham o'zini oldinga yetaklaydigan tuganmas motivatsiya bo'lavermaydi, ular faqat vaqtinchalik turtki olishi mumki, ammo bu ham qayerdadir borib to'xtaydi.
+
+Yuri Katsuki
+
+<br />
+
+> Ming afsuski yangi modernizatsiya degradatsiyaga yetakladi. Biz tosh davriga zamonaviy usulda qaytib keldik.
+
+Yuri Katsuki
+
+<br />
+
 > Dasturchi malakasi oshgani sayin uning dasturidan foydalanuvchilar nodonlashib boraveradi...
 
 Kimdir
@@ -24,7 +36,7 @@ Loyiha rahbari
 
 > Ko'p qatorlik chiqariladigan string outputlar ko'proq delimeter funksiya yoza ololmaydigan juniorlarga xos narsa
 
-UwUssimo Robinson
+Yuri Katsuki
 
 <br />
 
