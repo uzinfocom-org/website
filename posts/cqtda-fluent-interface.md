@@ -1,6 +1,6 @@
 ---
 title: "C++(QT)'da fluent interface"
-description: "Obyektning bunday qobiliyati bilan ishlashni php, javascript, java dasturchilar juda yaxshi bilishadi. Asosan javascriptda..."
+description: 'Obyektning bunday qobiliyati bilan ishlashni php, javascript, java dasturchilar juda yaxshi bilishadi. Asosan javascriptda...'
 slug: cqtda-fluent-interface
 date: February 7, 2023
 ---
@@ -23,7 +23,7 @@ class Uy {
 	    void azolar(int soni){
 	        o_soni = soni;
 	    }
-		
+
 		void malumot(){
 	        qDebug() << "Mushuk nomi:" << o_ismi;
             qDebug() << "Oila a'zolar:" << o_soni;
@@ -74,4 +74,4 @@ int main(int argc, char** argv) {
 
 E'tibor berganingizdek ikkinchi variantda obyektning tuzilishi ozgina murakkablashdi. Lekin keyinchalik undagi metodlarga qilinadigan murojaatlar soddalashdi. Bu esa minglab qatorlarga ega loyihalarda kodni o'qish jarayonini yanada soddalashtirib beradi. Shuningdek minglab qatorlarni qisqartirishga ham yodam beradi.
 
-Fluent Interface aslida bundanda ko'proq imkoniyatlarga ega, bu haqida albatta ko'proq izlanib topasiz.  Agarda sizga kod qatorlariga qarab haq to'lashmasa bu imkoniyatlardan ko'proq foydalaning. Zero o'zingiz va o'zgalar vaqtini ham tejaysiz bu bilan.
+Fluent Interface aslida bundanda ko'proq imkoniyatlarga ega, bu haqida albatta ko'proq izlanib topasiz. Agarda sizga kod qatorlariga qarab haq to'lashmasa bu imkoniyatlardan ko'proq foydalaning. Zero o'zingiz va o'zgalar vaqtini ham tejaysiz bu bilan.
