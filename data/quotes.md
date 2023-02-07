@@ -22,7 +22,7 @@ Loyiha rahbari
 
 <br />
 
-> Multiline string as output was designed for juniors who can’t write a delimiter function
+> Ko'p qatorlik chiqariladigan string outputlar ko'proq delimeter funksiya yoza ololmaydigan juniorlarga xos narsa
 
 UwUssimo Robinson
 
@@ -40,7 +40,7 @@ Stiv Vozniak
 
 <br />
 
-Copy va Paste dasturchilar tomonidan dasturchilar uchun dasturlashtirilgan.
+> Copy va Paste dasturchilar tomonidan dasturchilar uchun dasturlashtirilgan.
 
 Elye
 
