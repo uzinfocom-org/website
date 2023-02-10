@@ -63,9 +63,32 @@ Demak arduinoning uchta pin blokdan tashkil topganini hisobga oladigan bo'lsak:
 
 Har bir registrdagi bir bit bitta pinga mos keladi, DDRB misolida:
 
-|XTAL|XTAL|D13|D12|D11|D10|D9|D8|
-|--|--|--|--|--|--|--|--|--|
-|1|1|0(1)|0(1)|0(1)|0(1)|0(1)|0(1)|
+<table border="1" width="100%" border-collapse="collapse" style="text-align: center; ">
+<thead>
+<tr>
+<th>XTAL</th>
+<th>XTAL</th>
+<th>D13</th>
+<th>D12</th>
+<th>D11</th>
+<th>D10</th>
+<th>D9</th>
+<th>D8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0(1)</td>
+<td>0(1)</td>
+<td>0(1)</td>
+<td>0(1)</td>
+<td>0(1)</td>
+<td>0(1)</td>
+</tr>
+</tbody>
+</table>
 
 *\* - Pinlar soni 6ta bo'lishiga qaramasdan kristal sababli 8 bitda berilishi lozim (XTAL)*
 
