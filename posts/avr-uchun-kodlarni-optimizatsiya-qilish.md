@@ -1,6 +1,6 @@
 ---
-title: "Avr uchun kodlarni optimizatsiya qilish"
-description: "Arduino board resurs tejamaydigan parazit dasturchilar uchun juda foydali qurilma hisoblanadi. Chunki ushbu kichik..."
+title: 'Avr uchun kodlarni optimizatsiya qilish'
+description: 'Arduino board resurs tejamaydigan parazit dasturchilar uchun juda foydali qurilma hisoblanadi. Chunki ushbu kichik...'
 slug: avr-uchun-kodlarni-optimizatsiya-qilish
 date: February 10, 2023
 ---
@@ -23,7 +23,8 @@ Lekin qurilmaning qanday ishlashini o'rganidan bo'lsak undagi 2 KB xotira ham ju
 
 ## Lamercha kod yozish
 
-Arduinoda yonib-o'chuvchi dastur kodini olaylik. Deyarli juda ko'pchilik quyidagi variantda kod yozishga odatlangan. Albatta bu juda sodda ko'rishishga ega. Lekin kompilyator bergan statistikaga qaraydigan bo'lsak juda kichik dastur uchun ham katta resurs ishlatilayotganini ko'rishimiz mumkin. 
+Arduinoda yonib-o'chuvchi dastur kodini olaylik. Deyarli juda ko'pchilik quyidagi variantda kod yozishga odatlangan. Albatta bu juda sodda ko'rishishga ega. Lekin kompilyator bergan statistikaga qaraydigan bo'lsak juda kichik dastur uchun ham katta resurs ishlatilayotganini ko'rishimiz mumkin.
+
 ```
 924 bytes (2%) of program storage space
 9 bytes (0%) of dynamic memory
@@ -32,10 +33,11 @@ Arduinoda yonib-o'chuvchi dastur kodini olaylik. Deyarli juda ko'pchilik quyidag
 ![sample code](https://i.ibb.co/gD2YrzQ/image.png)
 
 ## Manipulatsiya
+
 Keling ishni arduino kutubxonalarini titkilashdan boshlasak. Quyidagi katalogda ko'rsatilgan fayl orqali `pinMode()` va `digitalWrite()` funsksiyalari qanday ishlashini ko'rishimiz mumkin. Ushbu funksiyalar oddiy foydalanuvchi uchun registerlarga yozishni soddalashtirib beryapti xolos. Bu esa ushbu funksiyalarsiz ham ishlash mumkinligini bildiradi.
 
 `~/.arduino/packages/arduino/hardware/avr/1.8.5/cores/arduino/wiring_digital.c`
-*Eslatma: Men linux OSdan foydalanaman, sizdagi operatsion tizim turiga qarab fayllar katalogi farq qilishi mumkin.*
+_Eslatma: Men linux OSdan foydalanaman, sizdagi operatsion tizim turiga qarab fayllar katalogi farq qilishi mumkin._
 
 Atmega chipining texnik hujjatiga qaraydigan bo'lsak portlarning uchta seksiyaga qarab bo'linganini ko'ramiz:
 
@@ -43,7 +45,7 @@ Atmega chipining texnik hujjatiga qaraydigan bo'lsak portlarning uchta seksiyaga
 
 **C** - analog pinlar (A0-A5)
 
-**D** -  0dan 7gacha bo'lgan pinlar (D0-D7)
+**D** - 0dan 7gacha bo'lgan pinlar (D0-D7)
 
 Registerlarni boshqarish:
 
@@ -57,7 +59,7 @@ Demak arduinoning uchta pin blokdan tashkil topganini hisobga oladigan bo'lsak:
 
 **-DDRB, PORTB, PINB** - 8 dan 13 gacha bo'lgan pinlar uchun
 
-**-DDRC, PORTC, PINC**  - A0 dan A5 gacha bo'lgan pinlar uchun
+**-DDRC, PORTC, PINC** - A0 dan A5 gacha bo'lgan pinlar uchun
 
 **-DDRD, PORTD, PIND** - 0 dan 7 gacha pinlar uchun
 
@@ -90,7 +92,7 @@ Har bir registrdagi bir bit bitta pinga mos keladi, DDRB misolida:
 </tbody>
 </table>
 
-*\* - Pinlar soni 6ta bo'lishiga qaramasdan kristal sababli 8 bitda berilishi lozim (XTAL)*
+_\* - Pinlar soni 6ta bo'lishiga qaramasdan kristal sababli 8 bitda berilishi lozim (XTAL)_
 
 Yuqorida biz DDRB registrida 8 dan 13 gacha pinlar rejimini kirish yoki chiqish sifatida boshqarish imkoniyatini ko'rishimiz mumkin. Misol uchun, agar 8-pin uchun bit **0 qiymatiga** ega bo'lsa, bu 8-pin uchun **kirish rejimini** anglatadi , aks holda **1 qiymatida** bo'lsa, **chiqish rejimi**.
 
@@ -98,7 +100,7 @@ Arduino dasturi uchun kiritish (misol):
 
 **DDRB=B11111111;** - olti pinning barchasi uchun chiqish rejimini yoqish
 
-**DDRB=B11111100;**  -  8 va 9 pinlarni kirish va 10 dan 13 gacha bo'lgan pinlarni chiqish uchun sozlash.
+**DDRB=B11111100;** - 8 va 9 pinlarni kirish va 10 dan 13 gacha bo'lgan pinlarni chiqish uchun sozlash.
 
 Yoki hex orqali kiritish:
 
@@ -126,17 +128,19 @@ void loop() {
   delay(1000);
 }
 ```
+
 ```
 648 bytes (2%) of program storage space
 9 bytes (0%) of dynamic memory
 ```
+
 `pinMode()` va `digitalWrite()` funksiyasi bilan yozilgan koddagi resurs bilan solishtiradigan bo'lsak 276 baytga farq qildi.
 
 ## setup() va loop() funksiyalaridan kechish
 
-Arduinoda `void setup()`  funksiyasi qurilma yongandan so'ng turli sozlamalarni berishga ishlatiladi. `void loop()` esa kristal tezligiga qarab cheksiz sikl hisobida ishlaydi.
+Arduinoda `void setup()` funksiyasi qurilma yongandan so'ng turli sozlamalarni berishga ishlatiladi. `void loop()` esa kristal tezligiga qarab cheksiz sikl hisobida ishlaydi.
 
-Demak  `void setup()` va `void loop()` funksiyalarini AVR kodlaridan izlaymiz. 
+Demak `void setup()` va `void loop()` funksiyalarini AVR kodlaridan izlaymiz.
 
 `~/.arduino/packages/arduino/hardware/avr/1.8.5/cores/arduino/main.cpp`
 
@@ -145,6 +149,7 @@ Ushbu fayl ichida setup() va cheksiz sikl ichida loop() funksiyasiga qilingan mu
 ![main.cpp](https://i.ibb.co/f2cByJ0/Arch-Labs-2022-10-04-58-1920x1080.png)
 
 Birinchi kod:
+
 ```cpp
 int main() {
   DDRB = B11100000; // 13-portni chiqish uchun sozlash
@@ -156,10 +161,12 @@ int main() {
   }
 }
 ```
+
 ```
 500 bytes (1%) of program storage space
 9 bytes (0%) of dynamic memory
 ```
+
 Sarflangan resurslar:
 
 **pinMode** va **digitalWritega** nisbatan farq: 424 bayt
@@ -167,14 +174,17 @@ Sarflangan resurslar:
 **setup()** va **loop()** ga nisbatan farq: 148 bayt
 
 ## Delay uchun alternativ
+
 Lekin yuqoridagi kodimizni ishga tushiradigan bo'lsak 13-pin doimiy yoniq qolayotganini ko'rishimiz mumkin. Chunki `Arduino.h` kutubxonasi ishga tushmayapti va shu sababli `delay()` funksiyamiz ham o'z ishini bajarmayapti.
 
 Demak delay uchun muqobil variant qo'llashimiz kerak. Buning eng optimal usuli esa for sikli hisoblanadi. Lekin for siklni ham bo'l holatda qoldirib bo'lmaydi. Shu sababli kompilyatorni chalg'itish uchun chunchaki `asm()` funksiyasidan foydalanamiz. Buda komplyatorda xuddiki assembler kodini ishga tushirayotgandagi kabi tasasavvur paydo bo'ladi va oraliq pauza kuzatiladi.
+
 ```c
 for (long i = 0; i < 500000; i++) {
   asm("");
 }
 ```
+
 ```c
 int main() {
   DDRB = B11100000;
@@ -190,10 +200,12 @@ int main() {
   }
 }
 ```
+
 ```
 178 bytes (0%) of program storage space
 0 bytes (0%) of dynamic memory
 ```
+
 Sarflangan resurslar:
 
 **pinMode** va **digitalWritega** nisbatan farq: 746 bayt
@@ -215,10 +227,12 @@ int main() {
   }
 }
 ```
+
 ```
 158 bytes (0%) of program storage space
 0 bytes (0%) of dynamic memory
 ```
+
 ## Xulosa
 
 Inson tiliga yaqinlashganimiz sari resurslar sarfidan yutqazib boraveramiz. Misol uchun pythondagi 1 qator kod qiladigan vazifa C tilida 100 qator bo'lishi mumkin. Lekin resurs va tezkorlik jihatdan 100 qator kod doimiy birinchilikda qolaveradi. Chunki 1 qator kodni minglab qatorlarda yozilgan kodlar orqali qurilmagan tushuntirish lozim.
