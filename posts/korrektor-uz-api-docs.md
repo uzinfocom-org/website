@@ -1,5 +1,5 @@
 ---
-title: "Korrektor.uz uchun api va texnik hujjatlar"
+title: 'Korrektor.uz uchun api va texnik hujjatlar'
 description: "Uzinfocom Open Source jamoasidan korrektor.uz foydalanuvchilari uchun bahorgi sovg'a."
 slug: korrektor-uz-api-docs
 date: March 9, 2023
