@@ -20,11 +20,11 @@
   ],
   "data": [
     {
-      "title": "Apple Magic Keyboard JIS",
-      "description": "Yuri'ga tegishli membrana va yapon sxemasidagi klaviatura",
-      "image": "https://lab.hendigi.com/wp-content/uploads/2021/12/th_DSCF5109.jpg",
-      "url": "https://www.apple.com/shop/product/MQ052J/A/magic-keyboard-with-numeric-keypad-japanese",
-      "key": "FULL"
+      "title": "Keychron K3 E2",
+      "description": "Sokhibjon'ga tegishli ko'k switchlik va pastki profillik yengil klaviatura",
+      "image": "https://i.rtings.com/assets/products/MSgrVKR1/keychron-k3-version-2/design-medium.jpg",
+      "url": "https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard",
+      "key": "65%"
     },
     {
       "title": "Keychron K8",
@@ -41,18 +41,25 @@
       "key": "65%"
     },
     {
-      "title": "Sharkoon PureWriter",
+      "title": "Keychron V1",
       "description": "Crystalnyan'ga tegishli ko'k switchlik va yengil ergonomik klaviatura",
-      "image": "https://www.techtesters.eu/pic/SHARKOONPUREWRITER/x3.JPG",
-      "url": "https://en.sharkoon.com/product/PWTKLRGB",
+      "image": "https://cdn.shopify.com/s/files/1/0059/0630/1017/t/5/assets/keychronv1custommechanicalkeyboard27-1657706139851.jpg?v=1657706183",
+      "url": "https://www.keychron.com/products/keychron-v1-qmk-via-custom-mechanical-keyboard?variant=40532670578777",
       "key": "TKL"
     },
     {
-      "title": "Sharkoon PureWriter",
+      "title": "Apple Magic Keyboard",
       "description": "Phoenixifier'ga tegishli qizil switchlik va yengil ergonomik klaviatura",
-      "image": "https://preview.redd.it/built-a-lapboard-for-my-purewriter-tkl-rgb-v0-zbz2l7b4uey91.jpeg?width=3840&format=pjpg&auto=webp&s=d40fe016a374658655a02a253c46b0e6eebd857a",
-      "url": "https://en.sharkoon.com/product/PWTKLRGB",
-      "key": "TKL"
-    }
+      "image": "https://149426355.v2.pressablecdn.com/wp-content/uploads/2015/10/embargo-mksolo-bleed.jpg",
+      "url": "https://www.apple.com/shop/product/MK2A3LL/A/magic-keyboard-us-english",
+      "key": "65%"
+    },
+    {
+      "title": "Keychron K3 E3",
+      "description": "Sardor'ga tegishli qizil switchlik va pastki profillik yengil klaviatura",
+      "image": "https://i.rtings.com/assets/products/MSgrVKR1/keychron-k3-version-2/design-medium.jpg",
+      "url": "https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard",
+      "key": "65%"
+    },
   ]
 }
