@@ -26,13 +26,9 @@ Hamjamiyat: MySQLdan farqli o‘laroq MariaDB Oracleʼdan ko‘ra ko‘proq hamj
 **Texnik farqlar:**
 
 1.  Tezlik: MariaDBʼning MySQLʼga nisbatan eng muhim afzalligi uning tezligi va ishlashidir. Replikatsiya va so‘rovlarni bajarish haqida gap ketganda, MariaDB MySQLʼga qaraganda tezroq. Bundan tashqari MariaDB bir vaqtda juda ko‘plab ulanishlarni qo‘llay oladi.
-    
 2.  Xavfsizlik: MySQL parol xavfsizligini tekshirish va oshirish uchun ishlatiladigan validate_password komponenti bilan birga keladi. MariaDB, o‘z navbatida, foydalanuvchilarga maʼlumotlar bazasini boshqarishda ko‘proq xavfsizlikni taʼminlaydigan turli xil parolni tekshirish plaginlarini taklif qiladi.
-    
 3.  Shifrlash: MySQL vaqtinchalik jadvallarni va ikkilik sanoq tizimiga asoslangan loglarni shifrlamaydi. Boshqa tomondan, MariaDB ikkilik loglarni shifrlash va vaqtinchalik jadval shifrlashni qo‘llab-quvvatlaydi.
-    
 4.  Maʼlumotlarni saqlash mexanizmlari: MariaDB Blackhole, CSV, XtraDB, Aria, InnoDB, Archive, MariaDB ColumnStore, Connect, Cassandra Storage Engine va boshqalar ko‘plab mexanizmlarni qo‘llab-quvvatlaydi. MySQLʼda qo‘llab-quvvatlanadigan saqlash mexanizmlari esa MyISAM, Merge, Federated, InnoDB, Archive, Memory, CSV, Blackhole va Example hisoblanadi.
-    
 
 Ochiq mabalar: MariaDB to‘liq paketni taqdim etadi, MySQL esa maʼlum cheklovlar bilan birga keladi.
 

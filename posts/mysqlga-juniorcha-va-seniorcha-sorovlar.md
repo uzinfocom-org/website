@@ -83,9 +83,9 @@ Tasavvurimizni yana bir ishga tushirsakda sotilgan mahsulotlarni foizlardagi nis
 
 ```sql
 SELECT id, COUNT(*) AS count, 100 * COUNT(*)/s.total_sum AS percentage
-FROM sales 
+FROM sales
 CROSS JOIN (
-	SELECT COUNT(*) AS total_sum 
+	SELECT COUNT(*) AS total_sum
     FROM sales
 ) AS s
 GROUP BY id;
