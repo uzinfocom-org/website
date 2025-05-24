@@ -15,51 +15,26 @@
     {
       "name": "FULL",
       "color": "green"
-
+    },
+    {
+      "name": "ERGO",
+      "color": "yellow"
     }
   ],
   "data": [
     {
-      "title": "Keychron K3 E2",
-      "description": "Sokhibjon'ga tegishli ko'k switchlik va pastki profillik yengil klaviatura",
-      "image": "https://i.rtings.com/assets/products/MSgrVKR1/keychron-k3-version-2/design-medium.jpg",
-      "url": "https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard",
-      "key": "65%"
-    },
-    {
-      "title": "Keychron K8",
-      "description": "Yetimdasturchi'ga tegishli qizil switchlik va praktik ergonomik klaviatura",
-      "image": "https://ksr-ugc.imgix.net/assets/029/351/094/781f403bfd495fe330bf4be18b4203e0_original.png?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1591341792&auto=format&frame=1&q=92&s=5befcde073edfb72d1c69a8d55631976",
-      "url": "https://www.keychron.com/products/keychron-k8-tenkeyless-wireless-mechanical-keyboard",
+      "title": "Keychron K8 Pro",
+      "description": "Sokhibjon'ga tegishli 'banana' switchlik va pastki profillik yengil klaviatura",
+      "image": "https://static.tildacdn.com/stor3262-3133-4534-a464-653362393531/16049696.jpg",
+      "url": "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard",
       "key": "TKL"
     },
     {
       "title": "ErgoDox EZ",
       "description": "Shakhzod'ga tegishli jigarrang switchlik va dvorak moslashuvchan klaviatura",
-      "image": "https://cdn.shopify.com/s/files/1/1152/3264/t/25/assets/neat-ergodox-ez-hero-poster.jpg?v=640722201241920101572515781",
-      "url": "https://ergodox-ez.com/",
-      "key": "65%"
-    },
-    {
-      "title": "Keychron V1",
-      "description": "Crystalnyan'ga tegishli ko'k switchlik va yengil ergonomik klaviatura",
-      "image": "https://cdn.shopify.com/s/files/1/0059/0630/1017/t/5/assets/keychronv1custommechanicalkeyboard27-1657706139851.jpg?v=1657706183",
-      "url": "https://www.keychron.com/products/keychron-v1-qmk-via-custom-mechanical-keyboard?variant=40532670578777",
-      "key": "TKL"
-    },
-    {
-      "title": "Apple Magic Keyboard",
-      "description": "Phoenixifier'ga tegishli qizil switchlik va yengil ergonomik klaviatura",
-      "image": "https://149426355.v2.pressablecdn.com/wp-content/uploads/2015/10/embargo-mksolo-bleed.jpg",
-      "url": "https://www.apple.com/shop/product/MK2A3LL/A/magic-keyboard-us-english",
-      "key": "65%"
-    },
-    {
-      "title": "Keychron K3 E3",
-      "description": "Sardor'ga tegishli qizil switchlik va pastki profillik yengil klaviatura",
-      "image": "https://i.rtings.com/assets/products/MSgrVKR1/keychron-k3-version-2/design-medium.jpg",
-      "url": "https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard",
-      "key": "65%"
+      "image": "https://rancic.org/blog/voyager-review/voyager.png",
+      "url": "https://www.zsa.io/voyager",
+      "key": "ERGO"
     }
   ]
 }
