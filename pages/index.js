@@ -1,6 +1,5 @@
 import Page from '@components/page'
 import Link from '@components/link'
-import Spotify from '@components/spotify/now-listening'
 
 const Index = () => {
   return (
@@ -26,8 +25,6 @@ const Index = () => {
           tugmalarini bosing. Agarda ushbu usul ish bermasa, yuqoridagi ⌘
           tugmasi orqali harakatni davom ettirishingiz mumkin...
         </p>
-
-        {/*<Spotify />*/}
       </article>
     </Page>
   )

@@ -1,13 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   swcMinify: true,
   async redirects() {
     return [
-      {
-        source: '/discord',
-        destination: 'https://discord.gg/JkXFQpScFj',
-        permanent: true,
-      },
       {
         source: '/telegram',
         destination: 'https://t.me/uzinfocom_oss',
@@ -15,7 +11,6 @@ const nextConfig = {
       },
     ]
   },
-  output: 'standalone',
 }
 
 export default nextConfig

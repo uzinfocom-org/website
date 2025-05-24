@@ -12,3 +12,5 @@ yalc.lock
 yarn-error.log
 .env.local
 package-lock.json
+.direnv
+result

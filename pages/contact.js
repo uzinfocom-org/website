@@ -11,7 +11,7 @@ const Contact = () => {
             href="mailto:cctld@uzinfocom.uz?subject=Salom Uzinfocom!"
             className="reset"
           >
-            cctld@uzinfocom.uz
+            oss@uzinfocom.uz
           </a>
         </blockquote>
 

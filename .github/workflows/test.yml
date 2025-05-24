@@ -3,14 +3,28 @@ name: Test CI
 on: [push, pull_request]
 
 jobs:
-  web:
+  test-flake:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 18
-      - run: npm install -g pnpm
-      - run: pnpm install
-      - run: pnpm lint
-      - run: pnpm fmt
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Check up flake configuration
+        run: nix flake check --all-systems --show-trace
+
+  test-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Build project with Nix
+        run: nix build
