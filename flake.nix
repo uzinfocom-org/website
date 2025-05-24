@@ -35,6 +35,6 @@
     )
     // {
       # Deployment module
-      # nixosModules.server = import ./module.nix self;
+      nixosModules.server = import ./module.nix self;
     };
 }

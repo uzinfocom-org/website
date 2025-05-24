@@ -7,7 +7,7 @@ flake: {
   ...
 }: let
   # Shortcut config
-  cfg = config.services.uzinfocom.taggis;
+  cfg = config.services.uzinfocom.website;
 
   # Packaged server
   server = flake.packages.${pkgs.stdenv.hostPlatform.system}.default;
@@ -42,16 +42,16 @@ flake: {
   # The systemd service
   service = lib.mkIf cfg.enable {
     users.users.${cfg.user} = {
-      description = "Uzinfocom Taggis Website user";
+      description = "Uzinfocom Open Source Website user";
       isSystemUser = true;
       group = cfg.group;
     };
 
     users.groups.${cfg.group} = {};
 
-    systemd.services.uzinfocom-taggis = {
-      description = "Social website of Uzinfocom";
-      documentation = ["https://github.com/uzinfocom-org/taggis"];
+    systemd.services.uzinfocom-website = {
+      description = "Website of  Uzinfocom Open Source";
+      documentation = ["https://github.com/uzinfocom-org/website"];
 
       environment = {
         PORT = "${toString cfg.port}";
@@ -115,12 +115,12 @@ flake: {
 
   asserts = lib.mkIf cfg.enable {
     warnings = [
-      (lib.mkIf (cfg.proxy.enable && cfg.proxy.domain == null) "services.uzinfocom.taggis.proxy.domain must be set in order to properly generate certificate!")
+      (lib.mkIf (cfg.proxy.enable && cfg.proxy.domain == null) "services.uzinfocom.website.proxy.domain must be set in order to properly generate certificate!")
     ];
   };
 in {
   options = with lib; {
-    services.uzinfocom.taggis = {
+    services.uzinfocom.website = {
       enable = mkEnableOption ''
         Uzinfocom's Social website.
       '';
@@ -169,21 +169,21 @@ in {
 
       user = mkOption {
         type = types.str;
-        default = "uzinfocom-taggis";
+        default = "uzinfocom-website";
         description = "User for running system + accessing keys";
       };
 
       group = mkOption {
         type = types.str;
-        default = "uzinfocom-taggis";
+        default = "uzinfocom-website";
         description = "Group for running system + accessing keys";
       };
 
       dataDir = mkOption {
         type = types.str;
-        default = "/var/lib/uzinfocom/taggis";
+        default = "/var/lib/uzinfocom/website";
         description = lib.mdDoc ''
-          The path where Taggis Website server keeps data and possibly logs.
+          The path where Uzinfocom Open Source Website server keeps data and possibly logs.
         '';
       };
 
@@ -191,7 +191,7 @@ in {
         type = types.package;
         default = server;
         description = ''
-          Packaged link.uzinfocom.uz website contents for service.
+          Packaged oss.uzinfocom.uz website contents for service.
         '';
       };
     };
