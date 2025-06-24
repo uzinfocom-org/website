@@ -19,6 +19,10 @@
     {
       "name": "ERGO",
       "color": "yellow"
+    },
+    {
+      "name": "Athena 1.0",
+      "color": "purple"
     }
   ],
   "data": [
@@ -49,6 +53,13 @@
       "image": "https://cdn.shopify.com/s/files/1/0059/0630/1017/t/5/assets/keychronk8proqmkviawirelessmechanicalkeyboardformacwindowsosaprofilepbtkeycapspcbscrewinstabilizerwithhotswappablegaterongpromechanicalswitchcompatiblewithmxcherrypandakailhwithrgbbacklightaluminumframe-1645094681965.jpg?v=1645094684",
       "url": "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard",
       "key": "US"
-    }
+    },
+    {
+      "title": "VGNV87 Pro Athena Mechanical Keyboard",
+      "description": "@orzklvʼdan olingan Domirandoga tegishli binafsha rangli ajoyib klaviatura",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m0e0dda51ytr09",
+      "url": "https://vgnlab.com/products/vgn-v87-wireless-mechanical-gaming-keyboard?srsltid=AfmBOoqxKid4sSi5tG5Klye2UPSTgobwCgmN5DLWxva_aIL3moRaEUcr",
+      "key": "Athena 1.0"
+    },
   ]
 }
