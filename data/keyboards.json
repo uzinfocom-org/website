@@ -35,6 +35,13 @@
       "image": "https://rancic.org/blog/voyager-review/voyager.png",
       "url": "https://www.zsa.io/voyager",
       "key": "ERGO"
+    },
+    {
+      "title": "Magic Keyboard",
+      "description": "Sokhib akadan olgan Bahromga tegishli kok sifat ajoyib klaviatura",
+      "image": "https://sixcolors.com/post/2015/10/apple-magic-keyboard-review/",
+      "url": "https://www.apple.com/shop/product/MXCL3LL/A/magic-keyboard-usb-c-us-english",
+      "key": "US"
     }
   ]
 }
