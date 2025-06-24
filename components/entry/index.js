@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer'
 import 'intersection-observer'
 
 import styles from './entry.module.css'
-const imagePrefix = `https://res.cloudinary.com/dsdlhtnpw/image/fetch/q_60,w_1000`
+const imagePrefix = ``
 
 const Entry = ({ title, description, image, href, position }) => {
   const [ref, inView] = useInView({ triggerOnce: true })
