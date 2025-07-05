@@ -22,7 +22,9 @@ const Entry = ({ title, description, image, href, position }) => {
           backgroundImage: image
             ? !inView
               ? 'none'
-              : `url('${imagePrefix}/${encodeURIComponent(image)}')`
+              : image.startsWith("http")
+                ? `url('${image}')`
+                : `url('${imagePrefix}/${image}')`
             : 'none',
           backgroundPosition: position ? position : 'center',
         }}
