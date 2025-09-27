@@ -182,7 +182,7 @@ in {
       dataDir = mkOption {
         type = types.str;
         default = "/var/lib/uzinfocom/website";
-        description = lib.mdDoc ''
+        description = ''
           The path where Uzinfocom Open Source Website server keeps data and possibly logs.
         '';
       };
