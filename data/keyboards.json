@@ -38,7 +38,7 @@
     },
     {
       "title": "Magic Keyboard",
-      "description": "@bahrom04ʼga tegishli membranalik ko'k rang klaviatura",
+      "description": "Bahrom04ʼga tegishli membranalik ko'k rang klaviatura",
       "image": "keyboards/blue-magic-keyboard-touchid.jpg",
       "url": "https://www.apple.com/shop/product/MXCL3LL/A/magic-keyboard-usb-c-us-english",
       "key": "TKL"
@@ -51,24 +51,10 @@
       "key": "TKL"
     },
     {
-      "title": "VGNV87 Pro Athena Mechanical Keyboard",
-      "description": "@domirandoʼga tegishli 'laym' switchlik eksklyuziv klaviatura",
-      "image": "keyboards/purple-vgnv87-pro.jpeg",
-      "url": "https://vgnlab.com/products/vgn-v87-wireless-mechanical-gaming-keyboard",
-      "key": "TKL"
-    },
-    {
       "title": "Keychron K8 Pro",
-      "description": "let_rec'ga tegishli 'qizil' switchlik va knob tugmalik og'ir klaviatura",
+      "description": "Let-rec'ga tegishli 'qizil' switchlik va knob tugmalik og'ir klaviatura",
       "image": "keyboards/black-keychron-k8-pro-2.jpg",
       "url": "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard",
-      "key": "TKL"
-    },
-    {
-      "title": "VGN ATK Z87 Pro",
-      "description": "Amalʼga tegishli 'laym' switchlik dinamik klaviatura",
-      "image": "keyboards/gray-vgn-atk-z87.jpg",
-      "url": "https://www.atk.store/products/atk-z87-wireless-semi-aluminum-mechanical-gaming-keyboard",
       "key": "TKL"
     }
   ]

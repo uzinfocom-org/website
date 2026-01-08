@@ -9,8 +9,15 @@ const Projects = () => {
           title="Xinux Uzbekistan"
           description="Linux ga oid O'zbek hamjamiyati va distributivi"
           image="https://oss.uzinfocom.uz/favicons/ogs/xinux.png"
-          href="https://xinux.uz/"
+          href="https://github.com/xinux-org"
         />
+        <Entry
+          title="Bleur"
+          description="Har xil yo'nalishlarga qaratilgan loyihalar maketi"
+          image="https://oss.uzinfocom.uz/favicons/ogs/bleur.png"
+          href="https://github.com/bleur-org"
+        />
+
       </article>
     </Page>
   )

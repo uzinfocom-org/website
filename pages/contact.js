@@ -8,10 +8,10 @@ const Contact = () => {
 
         <blockquote>
           <a
-            href="mailto:cctld@uzinfocom.uz?subject=Salom Uzinfocom!"
+            href="mailto:support@oss.uzinfocom.uz?subjects=Salom Uzinfocom!"
             className="reset"
           >
-            oss@uzinfocom.uz
+            support@oss.uzinfocom.uz
           </a>
         </blockquote>
 
