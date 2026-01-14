@@ -30,10 +30,14 @@ in
 
     src = source;
 
-    nativeBuildInputs = [
-      pkgs.nodejs_22
-      pkgs.pnpm.configHook
-      pkgs.typescript
+    nativeBuildInputs = with pkgs; [
+      nodejs_22
+      pnpm.configHook
+      typescript
+    ];
+
+    buildInputs = with pkgs; [
+      vips
     ];
 
     buildPhase = ''
@@ -76,7 +80,7 @@ in
       pname = manifest.name;
       version = manifest.version;
       src = source;
-      hash = "sha256-zVQ0h1R2hoVUMoSICc6Nl4Cy7NGHH+ck9qwCQrSctww=";
+      hash = "sha256-a9k3+FGRh3bQQUIcqKpTLQbf+RjRqPdWsgmqAL7DRVo=";
     };
 
     meta = with pkgs.lib; {

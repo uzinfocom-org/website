@@ -1,21 +1,14 @@
-{
-  pkgs ? import <nixpkgs> {}
-}:
-  pkgs.stdenv.mkDerivation {
-    name = "xinux-website-shell";
+flake: {pkgs ? import <nixpkgs> {}}: let
+  # Hostplatform system
+  system = pkgs.hostPlatform.system;
 
-    buildInputs = with pkgs; [
-      # Package managers
-      pnpm
-      yarn
+  # Production package
+  base = flake.packages.${system}.default;
+in
+  pkgs.mkShell {
+    inputsFrom = [base];
 
-      # Runtime engines
-      nodejs_22
-
-      # Nextjs dependencies
-      vips
-
-      # Nix
+    packages = with pkgs; [
       nixd
       statix
       deadnix
