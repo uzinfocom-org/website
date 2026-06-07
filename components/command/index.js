@@ -26,7 +26,8 @@ import {
   Quote,
   LightBulb,
   ArrowRight,
-  GitHub,
+  Git,
+  Codeberg,
   Telegram,
   Mail,
   CCTLD,
@@ -295,10 +296,17 @@ const DefaultItems = () => {
 
       <Group title="Ijtimoiy tarmoqlar">
         <Item
-          value="GitHub"
-          icon={<GitHub />}
+          value="Git"
+          icon={<Git />}
           callback={() =>
-            window.open('https://github.com/uzinfocom-org', '_blank')
+            window.open('https://git.oss.uzinfocom.uz/explore/repos', '_blank')
+          }
+        />
+        <Item
+          value="Codeberg"
+          icon={<Codeberg />}
+          callback={() =>
+            window.open('https://codeberg.org/uzinfocom', '_blank')
           }
         />
         <Item
@@ -310,11 +318,6 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Platformalar">
-        <Item
-          value="TLD Domenlar"
-          icon={<CCTLD />}
-          callback={() => window.open('https://cctld.uz', '_blank')}
-        />
         <Item
           value="Datacenter"
           icon={<DC />}

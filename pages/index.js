@@ -11,9 +11,10 @@ const Index = () => {
           <Link underline href="https://uzinfocom.uz/uz/" external>
             Uzinfocom
           </Link>{' '}
-          Organizatsiyasi tomonidan tashkil topgan va O'zbek Open Source ini
-          rivojlantirishga qaratilgan tashkilot. Bizda har xil katta va kichik
-          loyihalar mavjud. Bizning{' '}
+          tashkiloti tomonidan tashkil topgan va O'zbek Ochiq Manbali
+          dasturlarni rivojlantirishga qaratilgan departament. Bizda har xil
+          katta va kichik loyihalar mavjud va xalqaro loyihalarda faol ishtirok
+          etishda harakat qilamiz. Bizning{' '}
           <Link underline href="/blog">
             blogimiz
           </Link>{' '}

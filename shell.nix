@@ -1,28 +1,32 @@
-flake: {pkgs ? import <nixpkgs> {}}: let
+flake:
+{
+  pkgs ? import <nixpkgs> { },
+}:
+let
   # Hostplatform system
   system = pkgs.hostPlatform.system;
 
   # Production package
   base = flake.packages.${system}.default;
 in
-  pkgs.mkShell {
-    inputsFrom = [base];
+pkgs.mkShell {
+  inputsFrom = [ base ];
 
-    packages = with pkgs; [
-      nixd
-      statix
-      deadnix
-      alejandra
-    ];
+  packages = with pkgs; [
+    nixd
+    statix
+    deadnix
+    nixfmt-rs
+  ];
 
-    shellHook = ''
-      printf "Installing pnpm dependencies\n"
-      pnpm install
+  shellHook = ''
+    printf "Installing pnpm dependencies\n"
+    pnpm install
 
-      printf "Adding node_modules to PATH\n"
-      export PATH="$PWD/node_modules/.bin/:$PATH"
+    printf "Adding node_modules to PATH\n"
+    export PATH="$PWD/node_modules/.bin/:$PATH"
 
-      printf "Adding necessary aliases\n"
-      alias scripts='jq ".scripts" package.json'
-    '';
-  }
+    printf "Adding necessary aliases\n"
+    alias scripts='jq ".scripts" package.json'
+  '';
+}

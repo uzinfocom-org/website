@@ -1,11 +1,13 @@
 # Refer to this for more:
 # https://www.reddit.com/r/NixOS/comments/1fxf0am/setting_up_a_nextjs_project_as_a_systemd_service/
-flake: {
+flake:
+{
   config,
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   # Shortcut config
   cfg = config.services.uzinfocom.website;
 
@@ -14,29 +16,35 @@ flake: {
 
   # Caddy module lugin
   caddy = lib.mkIf (cfg.enable && cfg.proxy.enable && cfg.proxy.proxy == "caddy") {
-    services.caddy.virtualHosts = lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specicy it properly!" {
-      "${cfg.proxy.domain}" = {
-        serverAliases = cfg.proxy.aliases;
-        extraConfig = ''
-          reverse_proxy 127.0.0.1:${toString cfg.port}
-        '';
-      };
-    };
+    services.caddy.virtualHosts =
+      lib.debug.traceIf (builtins.isNull cfg.proxy.domain)
+        "proxy.domain can't be null, please specicy it properly!"
+        {
+          "${cfg.proxy.domain}" = {
+            serverAliases = cfg.proxy.aliases;
+            extraConfig = ''
+              reverse_proxy 127.0.0.1:${toString cfg.port}
+            '';
+          };
+        };
   };
 
   # Nginx module plugin
   nginx = lib.mkIf (cfg.enable && cfg.proxy.enable && cfg.proxy.proxy == "nginx") {
-    services.nginx.virtualHosts = lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specicy it properly!" {
-      "${cfg.proxy.domain}" = {
-        addSSL = true;
-        enableACME = true;
-        serverAliases = cfg.proxy.aliases;
-        locations."/" = {
-          proxyPass = "http://127.0.0.1:${toString cfg.port}";
-          proxyWebsockets = true;
+    services.nginx.virtualHosts =
+      lib.debug.traceIf (builtins.isNull cfg.proxy.domain)
+        "proxy.domain can't be null, please specicy it properly!"
+        {
+          "${cfg.proxy.domain}" = {
+            addSSL = true;
+            enableACME = true;
+            serverAliases = cfg.proxy.aliases;
+            locations."/" = {
+              proxyPass = "http://127.0.0.1:${toString cfg.port}";
+              proxyWebsockets = true;
+            };
+          };
         };
-      };
-    };
   };
 
   # The systemd service
@@ -47,11 +55,11 @@ flake: {
       group = cfg.group;
     };
 
-    users.groups.${cfg.group} = {};
+    users.groups.${cfg.group} = { };
 
     systemd.services.uzinfocom-website = {
       description = "Website of  Uzinfocom Open Source";
-      documentation = ["https://github.com/uzinfocom-org/website"];
+      documentation = [ "https://github.com/uzinfocom-org/website" ];
 
       environment = {
         PORT = "${toString cfg.port}";
@@ -59,9 +67,9 @@ flake: {
         NODE_ENV = "production";
       };
 
-      after = ["network-online.target"];
-      wants = ["network-online.target"];
-      wantedBy = ["multi-user.target"];
+      after = [ "network-online.target" ];
+      wants = [ "network-online.target" ];
+      wantedBy = [ "multi-user.target" ];
 
       serviceConfig = {
         User = cfg.user;
@@ -75,7 +83,7 @@ flake: {
           "AF_INET"
           "AF_INET6"
         ];
-        DeviceAllow = ["/dev/stdin r"];
+        DeviceAllow = [ "/dev/stdin r" ];
         DevicePolicy = "strict";
         IPAddressAllow = "localhost";
         LockPersonality = true;
@@ -91,7 +99,7 @@ flake: {
         ProtectKernelModules = true;
         ProtectKernelTunables = true;
         ProtectSystem = "strict";
-        ReadOnlyPaths = ["/"];
+        ReadOnlyPaths = [ "/" ];
         RemoveIPC = true;
         RestrictAddressFamilies = [
           "AF_NETLINK"
@@ -115,10 +123,13 @@ flake: {
 
   asserts = lib.mkIf cfg.enable {
     warnings = [
-      (lib.mkIf (cfg.proxy.enable && cfg.proxy.domain == null) "services.uzinfocom.website.proxy.domain must be set in order to properly generate certificate!")
+      (lib.mkIf (
+        cfg.proxy.enable && cfg.proxy.domain == null
+      ) "services.uzinfocom.website.proxy.domain must be set in order to properly generate certificate!")
     ];
   };
-in {
+in
+{
   options = with lib; {
     services.uzinfocom.website = {
       enable = mkEnableOption ''
@@ -139,13 +150,14 @@ in {
 
         aliases = mkOption {
           type = with types; listOf str;
-          default = [];
-          example = [];
+          default = [ ];
+          example = [ ];
           description = "List of domain aliases to add to domain";
         };
 
         proxy = mkOption {
-          type = with types;
+          type =
+            with types;
             nullOr (enum [
               "nginx"
               "caddy"
@@ -197,5 +209,10 @@ in {
     };
   };
 
-  config = lib.mkMerge [asserts service caddy nginx];
+  config = lib.mkMerge [
+    asserts
+    service
+    caddy
+    nginx
+  ];
 }

@@ -1,14 +1,16 @@
 {
-  pkgs ? let
-    lock = (builtins.fromJSON (builtins.readFile ./flake.lock)).nodes.nixpkgs.locked;
-    nixpkgs = fetchTarball {
-      url = "https://github.com/nixos/nixpkgs/archive/${lock.rev}.tar.gz";
-      sha256 = lock.narHash;
-    };
-  in
-    import nixpkgs {overlays = [];},
+  pkgs ?
+    let
+      lock = (builtins.fromJSON (builtins.readFile ./flake.lock)).nodes.nixpkgs.locked;
+      nixpkgs = fetchTarball {
+        url = "https://github.com/nixos/nixpkgs/archive/${lock.rev}.tar.gz";
+        sha256 = lock.narHash;
+      };
+    in
+    import nixpkgs { overlays = [ ]; },
   ...
-}: let
+}:
+let
   # Manifest data
   manifest = pkgs.lib.importJSON ./package.json;
 
@@ -24,74 +26,74 @@
     ${pkgs.lib.getExe pkgs.nodejs} ./server.js
   '';
 in
-  pkgs.stdenv.mkDerivation {
+pkgs.stdenv.mkDerivation {
+  pname = manifest.name;
+  version = manifest.version;
+
+  src = source;
+
+  nativeBuildInputs = with pkgs; [
+    nodejs_22
+    pnpm
+    pnpmConfigHook
+    typescript
+    vips
+  ];
+
+  buildInputs = with pkgs; [
+    vips
+  ];
+
+  buildPhase = ''
+    # Set to standalone mode and properties
+    sed -i 's/output: "export",/output: "standalone",/' ./next.config.mjs
+    sed -i 's/unoptimized: true,/unoptimized: false,/' ./next.config.mjs
+
+    # Build the package
+    pnpm build
+  '';
+
+  installPhase = ''
+    # Create output directory
+    mkdir -p $out
+
+    # Copy standalone as library
+    cp -r ./.next/standalone $out/lib
+
+    # Create filler folders
+    mkdir -p $out/lib/.next
+
+    # Copy static contents
+    if [ -d "./.next/static" ]; then
+      cp -R ./.next/static $out/lib/.next/static
+    fi
+
+    # Copy public assets
+    if [ -d "./public" ]; then
+      cp -R ./public $out/lib/public
+    fi
+
+    # Create executable directory
+    mkdir -p $out/bin
+
+    # Copy shell script to executables
+    cp -r ${exec} $out/bin/${manifest.name}-start
+  '';
+
+  pnpmDeps = pkgs.fetchPnpmDeps {
     pname = manifest.name;
     version = manifest.version;
-
     src = source;
+    fetcherVersion = 3;
+    hash = "sha256-2pPWDAMc05cuIkrvb1DAVRlFy0RdJZgdpd892sajnTg=";
+  };
 
-    nativeBuildInputs = with pkgs; [
-      nodejs_22
-      pnpm
-      pnpmConfigHook
-      typescript
-      vips
-    ];
-
-    buildInputs = with pkgs; [
-      vips
-    ];
-
-    buildPhase = ''
-      # Set to standalone mode and properties
-      sed -i 's/output: "export",/output: "standalone",/' ./next.config.mjs
-      sed -i 's/unoptimized: true,/unoptimized: false,/' ./next.config.mjs
-
-      # Build the package
-      pnpm build
-    '';
-
-    installPhase = ''
-      # Create output directory
-      mkdir -p $out
-
-      # Copy standalone as library
-      cp -r ./.next/standalone $out/lib
-
-      # Create filler folders
-      mkdir -p $out/lib/.next
-
-      # Copy static contents
-      if [ -d "./.next/static" ]; then
-        cp -R ./.next/static $out/lib/.next/static
-      fi
-
-      # Copy public assets
-      if [ -d "./public" ]; then
-        cp -R ./public $out/lib/public
-      fi
-
-      # Create executable directory
-      mkdir -p $out/bin
-
-      # Copy shell script to executables
-      cp -r ${exec} $out/bin/${manifest.name}-start
-    '';
-
-    pnpmDeps = pkgs.fetchPnpmDeps {
-      pname = manifest.name;
-      version = manifest.version;
-      src = source;
-      fetcherVersion = 3;
-      hash = "sha256-2pPWDAMc05cuIkrvb1DAVRlFy0RdJZgdpd892sajnTg=";
-    };
-
-    meta = with pkgs.lib; {
-      homepage = "https://oss.uzinfocom.uz";
-      mainProgram = "${manifest.name}-start";
-      description = "Website of Uzinfocom Open Source";
-      license = with licenses; [cc-by-40];
-      platforms = with platforms; linux ++ darwin;
-      maintainers = with maintainers; [orzklv];
-    };
-  }
+  meta = with pkgs.lib; {
+    homepage = "https://oss.uzinfocom.uz";
+    mainProgram = "${manifest.name}-start";
+    description = "Website of Uzinfocom Open Source";
+    license = with licenses; [ cc-by-40 ];
+    platforms = with platforms; linux ++ darwin;
+    maintainers = with maintainers; [ orzklv ];
+  };
+}
