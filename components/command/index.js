@@ -296,7 +296,7 @@ const DefaultItems = () => {
 
       <Group title="Ijtimoiy tarmoqlar">
         <Item
-          value="Git"
+          value="Forgejo"
           icon={<Git />}
           callback={() =>
             window.open('https://git.oss.uzinfocom.uz/explore/repos', '_blank')
