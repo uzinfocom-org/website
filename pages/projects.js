@@ -20,7 +20,7 @@ const Projects = () => {
         <Entry
           title="Gartenziya"
           description="Korporativ portal endi tez, qulay va xavfsiz!"
-          image="https://oss.uzinfocom.uz/favicons/ogs/bleur.png"
+          image="https://oss.uzinfocom.uz/favicons/ogs/gartensia.png"
           href="https://git.oss.uzinfocom.uz/gartensia"
         />
         <Entry
