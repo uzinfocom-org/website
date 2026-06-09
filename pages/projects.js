@@ -14,7 +14,7 @@ const Projects = () => {
         <Entry
           title="Uchar"
           description="Matrix protokoli ustida qurilgan xavfsiz muloqot."
-          image="https://oss.uzinfocom.uz/favicons/ogs/bleur.png"
+          image="https://oss.uzinfocom.uz/favicons/ogs/uchar.png"
           href="https://git.oss.uzinfocom.uz/uchar"
         />
         <Entry
