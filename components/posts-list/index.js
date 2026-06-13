@@ -9,10 +9,12 @@ const Posts = ({ slug, posts, paginate }) => {
   return (
     <div className={styles.container}>
       {posts.slice(0, paginate ? showMore : undefined).map((post) => {
-        const date = new Date(post.date).toLocaleDateString('default', {
-          month: 'numeric',
+        const date = new Date(post.date)
+        const ddmm = date.toLocaleDateString('uz', {
+          month: 'long',
           day: 'numeric',
         })
+        const year = date.getFullYear()
 
         return (
           <TextEntry
@@ -20,7 +22,13 @@ const Posts = ({ slug, posts, paginate }) => {
             href="/blog/[slug]"
             as={`/blog/${post.slug}`}
             title={post.title}
-            type={date}
+            type={
+              <>
+                <strong>{ddmm}</strong>
+                <br />
+                {year}
+              </>
+            }
             description={post.description}
           />
         )
