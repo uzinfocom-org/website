@@ -56,6 +56,13 @@
       "image": "keyboards/black-keychron-k8-pro-2.jpg",
       "url": "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard",
       "key": "TKL"
+    },
+    {
+      "title": "MechLands Blade75",
+      "description": "xfeusw'ga tegishli Linear MechLands Verdant switchlik va Double-Shot PBT tugmalik og'ir klaviatura",
+      "image": "keyboards/mechlands-blade75.png",
+      "url": "https://www.mechlands.com/products/mechlands-blade75",
+      "key": "75% compat"
     }
   ]
 }
