@@ -63,6 +63,13 @@
       "image": "keyboards/mechlands-blade75.png",
       "url": "https://www.mechlands.com/products/mechlands-blade75",
       "key": "75% compat"
+    },
+    {
+      "title": "silakka54",
+      "description": "aelloc'ga tegishli 'oq' switchlik split klaviatura",
+      "image": "keyboards/silakka54.jpg",
+      "url": "https://squalius-cephalus.github.io/silakka54/",
+      "key": "ERGO"
     }
   ]
 }
