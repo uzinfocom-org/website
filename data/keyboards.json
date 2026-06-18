@@ -30,17 +30,10 @@
       "key": "TKL"
     },
     {
-      "title": "ZSA Voyager",
-      "description": "Shakhzod'ga tegishli 'Kailh Choc Brown' switchlik va 'Gallium v2' layoutga moslashuvchan ZSA Voyager nomli klaviatura",
-      "image": "keyboards/black-zsa-voyager.webp",
-      "url": "https://www.zsa.io/voyager",
-      "key": "ERGO"
-    },
-    {
-      "title": "Magic Keyboard",
-      "description": "Bahrom04ʼga tegishli membranalik ko'k rang klaviatura",
-      "image": "keyboards/blue-magic-keyboard-touchid.jpg",
-      "url": "https://www.apple.com/shop/product/MXCL3LL/A/magic-keyboard-usb-c-us-english",
+      "title": "Keychron K3",
+      "description": "Bahrom04ʼga tegishli jigarrang switchlik low profile klaviatura",
+      "image": "keyboards/keychron-k3.jpg",
+      "url": "https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard",
       "key": "TKL"
     },
     {
@@ -51,10 +44,10 @@
       "key": "TKL"
     },
     {
-      "title": "Keychron K8 Pro",
+      "title": "Logitech G915 TKL LIGHTSPEED",
       "description": "Let-rec'ga tegishli 'qizil' switchlik va knob tugmalik og'ir klaviatura",
-      "image": "keyboards/black-keychron-k8-pro-2.jpg",
-      "url": "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard",
+      "image": "keyboards/logitech.jpg",
+      "url": "https://www.logitechg.com/en-us/shop/p/g915-tkl-wireless",
       "key": "TKL"
     },
     {
@@ -69,6 +62,20 @@
       "description": "aelloc'ga tegishli 'oq' switchlik split klaviatura",
       "image": "keyboards/silakka54.jpg",
       "url": "https://squalius-cephalus.github.io/silakka54/",
+      "key": "ERGO"
+    },
+    {
+      "title": "Kinesis Advantage 2",
+      "description": "Shakhzod'ga tegishli ergonomik klaviatura",
+      "image": "keyboards/kinesis-adv2.jpg",
+      "url": "https://kinesis-ergo.com/keyboards/advantage2-keyboard/",
+      "key": "ERGO"
+    },
+    {
+      "title": "ZSA Voyager",
+      "description": "yago'ga tegishli 'Kailh Choc Brown' switchlik va 'Gallium v2' layoutga moslashuvchan ZSA Voyager nomli klaviatura",
+      "image": "keyboards/black-zsa-voyager.webp",
+      "url": "https://www.zsa.io/voyager",
       "key": "ERGO"
     }
   ]
