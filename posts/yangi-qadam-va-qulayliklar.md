@@ -16,3 +16,7 @@ _Shahzod bilan davomini yozish kerak_
 Hamda, xabarlaringiz bor [oldingi postlarimizda](/blog/bizning-tanlovimiz) biz uchun ba'zi texnologiyalar ishlarimizda qo'llash keyinchalik maqsad qilib olgan edik. Biz so'nggi bir necha oylarda faol ushbu texnologiyalarni qo'llab kelish yordamida yetarlicha tajriba to'pladik. Aytaylik, endi Xinux [relago vositasi](https://git.oss.uzinfocom.uz/xinux/relago) yordamida tizimda bo'layotgan xatoliklarni bizga jo'natishingiz mumkin (crash report). Bu orqali tizimdagi har xil muammolarni aniqlashda bizga katta yordam beradi va tizimni yanada mukammallashtirish imkoniyatini yaratib beradi. Eng quvonarlisi, ushbu tizim [server taraflama butunlay Haskell dasturlash tilida yozilgan](https://git.oss.uzinfocom.uz/xinux/relago-support). _Shu yerda Ahmad akani boshidan o'tkazgan tajribalari_ Keyinchalik, yanada kattaroq loyihalarimizda ushbu tilni qo'llashga bel bog'ladik va qarabsizki, endilikda Uchar xabar almashinuv tarmog'imizda (messendjer) hamma mobil ilova orqali uzatiladigan xabarnomalar (push notification) [matrix spetsifikatsiyasiga binoan](https://spec.matrix.org/v1.19/push-gateway-api/) haskell dasturlash tilida yozilgan [uzatma (gateway) server](https://git.oss.uzinfocom.uz/uchar/sygnal) yordamida amalga oshiriladi. _Ahmad aka Python da qilgan izlanishlari va pythondagi rasvo holatlar va tajribasini tasvirlab beradilar. Keyin haskell nima berdi._
 
 ## Yangi ish o`rinlari
+
+_Shahzod texnik Uportal talablari vakansiyaga_
+
+_Ahmad aka texnik talablari vakansiyaga_
