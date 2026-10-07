@@ -81,6 +81,13 @@
       "image": "keyboards/black-zsa-voyager.webp",
       "url": "https://www.zsa.io/voyager",
       "key": "ERGO"
+    },
+    {
+      "title": "Sofle",
+      "description": "toxir'ga tegishli 'Akko Penguin (Silent)' switchlik split klaviatura",
+      "image": "keyboards/sofle.jpg",
+      "url": "https://josefadamcik.github.io/SofleKeyboard/",
+      "key": "ERGO"
     }
   ]
 }
